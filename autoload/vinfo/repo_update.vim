@@ -20,8 +20,8 @@ function! vinfo#repo_update#Info2help()
     exe 'silent %s/^* Menu:/MENU *:*/e'
 
     " Mark Nodes separations
-    let @@ = '========================================'
-    exe 'silent g/\v^File: .+/normal! "O\<Esc>2ppjj2ppo\<Esc>"'
+    let @o = "================================================================================\n"
+    exe 'silent g/\v^File: /exe "norm! \"oPj\"op\<Esc>"'
 
     " Create tag references
     " Change blank spaces with '_' and apply tag notation with '|'
