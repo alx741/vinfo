@@ -27,4 +27,7 @@ function! vinfo#repo_update#Info2help()
     " Change blank spaces with '_' and apply tag notation with '|'
     exe 'silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V /_/ge'
     exe 'silent %s/\v^\*\s+(.+)::/\* |\1|::'
+
+    " Create tags
+    exe 'silent g/\v^$\n[[:digit:]]+.+\n[\=|\-]+\n^$\n/exe "norm! j0Wvg_\"aygv\<Esc>"|s/\%V /_/ge|exe "norm! gv\<Esc>a*\<Esc>gvo\<Esc>i*\<Esc>vf*yA     \<Esc>pgv\"ap\<Esc>"'
 endfunction
