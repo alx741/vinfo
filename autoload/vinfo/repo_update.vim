@@ -10,6 +10,7 @@ function! vinfo#repo_update#Info2help()
 
     " Convert node subtitles (replace = underlining with -)
     exe "silent " . 'g/\v^$\n.+\n\=+\n^$\n/norm! jjvg_r-\<Esc>'
+    " Convert node subtitles (replace . underlining with -)
     exe "silent " . 'g/\v^$\n.+\n\.+\n^$\n/norm! jjvg_r-\<Esc>'
 
     " Convert node titles (replace * underlining with =)
@@ -20,7 +21,7 @@ function! vinfo#repo_update#Info2help()
 
     " Mark Nodes separations
     let @@ = '========================================'
-    exe 'silent g/^File: .+/normal! "O\<Esc>2ppjj2ppo\<Esc>"'
+    exe 'silent g/\v^File: .+/normal! "O\<Esc>2ppjj2ppo\<Esc>"'
 
     " Create tag references
     " Change blank spaces with '_' and apply tag notation with '|'
