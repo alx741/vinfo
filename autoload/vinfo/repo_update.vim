@@ -17,7 +17,7 @@ function! vinfo#repo_update#Info2help()
     exe "silent " . 'g/\v^$\n.+\n\*+\n^$\n/norm! jjvg_r=\<Esc>'
 
     " Convert Menu marks to vim help-files syntax
-    exe 'silent %s/^* Menu:/MENU *:*/e'
+    exe 'silent %s/^* Menu:/MENU/e'
 
     " Mark Nodes separations
     let @o = "================================================================================\n"
@@ -27,6 +27,9 @@ function! vinfo#repo_update#Info2help()
     " Change blank spaces with '_' and apply tag notation with '|'
     exe 'silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V /_/ge'
     exe 'silent %s/\v^\*\s+(.+)::/\* |\1|::'
+
+    " Remove false tags
+    exe 'silent g/\v\*[^\* ]+\*/exe "norm! f*xf*x"'
 
     " Create tags
     exe 'silent g/\v^$\n[[:digit:]]+.+\n[\=|\-]+\n^$\n/exe "norm! j0Wvg_\"aygv\<Esc>"|s/\%V /_/ge|exe "norm! gv\<Esc>a*\<Esc>gvo\<Esc>i*\<Esc>vf*yA     \<Esc>pgv\"ap\<Esc>"'
