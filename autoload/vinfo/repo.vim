@@ -6,6 +6,7 @@
 
 
 " exists(path, doc) {{{1
+" Returns TRUE if DOC exists in repo PATH
 function! vinfo#repo#exists(path, doc)
     let l:dirs = split(globpath(a:path, '*'), '\n')
 
@@ -16,5 +17,17 @@ function! vinfo#repo#exists(path, doc)
     endfor
 
     return 0
+endfunction
+" }}}1
+
+
+
+
+
+
+" clean(path) {{{1
+" Clean all docs in repo PATH
+function! vinfo#repo#clean(path)
+    exe '!rm -rf ' . a:path . '/*'
 endfunction
 " }}}1
