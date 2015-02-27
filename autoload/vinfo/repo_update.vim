@@ -19,10 +19,6 @@ function! vinfo#repo_update#Info2help()
     " Convert Menu marks to vim help-files syntax
     exe 'silent %s/^* Menu:/MENU/e'
 
-    " Mark Nodes separations
-    let @o = "================================================================================\n"
-    exe 'silent g/\v^File: /exe "norm! \"oPj\"op\<Esc>"'
-
     " Create tag references
     " Change blank spaces with '_' and apply tag notation with '|'
     exe 'silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V /_/ge'
@@ -32,5 +28,23 @@ function! vinfo#repo_update#Info2help()
     exe 'silent g/\v\*[^\* ]+\*/exe "norm! f*xf*x"'
 
     " Create tags
-    exe 'silent g/\v^$\n[[:digit:]]+.+\n[\=|\-]+\n^$\n/exe "norm! j0Wvg_\"aygv\<Esc>"|s/\%V /_/ge|exe "norm! gv\<Esc>a*\<Esc>gvo\<Esc>i*\<Esc>vf*yA     \<Esc>pgv\"ap\<Esc>"'
+    exe 'silent g/\v^File: /call s:Create_tag()'
+
+    " Mark Nodes separations
+    let @o = "================================================================================\n"
+    exe 'silent g/\v^File: /exe "norm! \"oPj\"op\<Esc>"'
 endfunction
+
+
+
+" Takes Node names, remove white spaces
+" and add '*' tag notation
+function! s:Create_tag()
+    exe "silent norm! " . '/\vNode: ' . "\<CR>W\"oyt,"
+    let @o = "\n*" . @o . "*\n"
+    exe "silent norm! \"op"
+    exe 'silent norm! ' .  "j0V\<Esc>"
+    exe 'silent s/\%V /_/ge'
+    exe 'silent right'
+endfunction
+
