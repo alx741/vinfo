@@ -53,28 +53,28 @@ function! s:Create_tag()
     " Create tag references
     " Node:
     exe 'silent norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
-    if @@ !~? '.\+|'
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Next:
     exe 'silent norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
-    if @@ !~? '.\+|'
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Prev:
     exe 'silent norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
-    if @@ !~? '.\+|'
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Up:
     exe 'silent norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
-    if @@ !~? '.\+|'
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
