@@ -22,12 +22,25 @@ endfunction
 
 
 
+" create(path, doc) {{{1
+" Create and split info plain text files of DOC in repo PATH
+function! vinfo#repo#create(path, doc)
+    let l:doc_path = a:path . '/' . a:doc . '/'
+    let l:doc = l:doc_path . a:doc . '.txt'
+    exe 'silent !mkdir ' . l:doc_path
+    exe 'silent !info ' . a:doc . ' >> ' . l:doc
+    exe 'silent !split -l 5000 -d ' . l:doc . ' ' . l:doc_path . a:doc
+    exe 'silent !rm ' . l:doc
+    exe 'redraw!'
+endfunction
+" }}}1
 
 
 
 " clean(path) {{{1
 " Clean all docs in repo PATH
 function! vinfo#repo#clean(path)
-    exe '!rm -rf ' . a:path . '/*'
+    exe 'silent !rm -rf ' . a:path . '/*'
+    exe 'redraw!'
 endfunction
 " }}}1
