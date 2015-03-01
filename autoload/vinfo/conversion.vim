@@ -1,7 +1,7 @@
 " =============================================================================
 " File: convertion.vim
 " Description: Conversion from info docs (plain text) to Vim help format
-" Author: Daniel Campoverde Carrión [alx741] <alx741@riseup.net>
+" Author: Daniel Campoverde [alx741] <alx741@riseup.net>
 " =============================================================================
 
 

@@ -1,7 +1,7 @@
 " =============================================================================
 " File: repo.vim
 " Description: Create new help files for the repository, verify repo existences
-" Author: Daniel Campoverde Carrión [alx741] <alx741@riseup.net>
+" Author: Daniel Campoverde [alx741] <alx741@riseup.net>
 " =============================================================================
 
 
