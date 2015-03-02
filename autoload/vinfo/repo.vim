@@ -31,7 +31,7 @@ function! vinfo#repo#create(path, doc)
     let l:doc = l:doc_path . a:doc . '.txt'
     exe 'silent !mkdir ' . l:doc_path
     exe 'silent !info ' . a:doc . ' >> ' . l:doc
-    exe 'silent !split -l 5000 -d ' . l:doc . ' ' . l:doc_path . a:doc
+    exe 'silent !split -l 5000 -d --additional-suffix .txt ' . l:doc . ' ' . l:doc_path . a:doc
     exe 'silent !rm ' . l:doc
     exe 'redraw!'
 endfunction

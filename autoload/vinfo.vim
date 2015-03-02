@@ -41,7 +41,7 @@ endfunction
 " Shos the DOC info doc in a new split window
 function! vinfo#show(doc)
     split
-    exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00'
+    exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00.txt'
     setlocal ft=help bt=help bufhidden=delete readonly nomodifiable nobuflisted
 endfunction
 " }}}1
