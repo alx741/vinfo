@@ -1,0 +1,61 @@
+*vinfo.txt*       Read Info documentation files in a Vim-help fashioned way
+*Vinfo* *vinfo*
+==============================================================================
+#      oooooo     oooo ooooo ooooo      ooo oooooooooooo   .oooooo.          #
+#       `888.     .8'  `888' `888b.     `8' `888'     `8  d8P'  `Y8b         #
+#        `888.   .8'    888   8 `88b.    8   888         888      888        #
+#         `888. .8'     888   8   `88b.  8   888oooo8    888      888        #
+#          `888.8'      888   8     `88b.8   888    "    888      888        #
+#           `888'       888   8       `888   888         `88b    d88'        #
+#            `8'       o888o o8o        `8  o888o         `Y8bood8P'         #
+==============================================================================
+CONTENTS                                                       *vinfo-contents*
+
+    1. Intro........................................|vinfo-intro|
+    2. Usage........................................|vinfo-usage|
+    3. Clean Repository.............................|vinfo-repository|
+    4. Credits......................................|vinfo-credits|
+
+==============================================================================
+INTRO                                                             *vinfo-intro*
+
+Vinfo allows you to read Info documentation files right inside a Vim session
+in a Vim-help fashioned way or from a shell just the way you normally use
+GNU Info.
+
+==============================================================================
+USAGE                                                             *vinfo-usage*
+
+
+Use Vinfo inside Vim
+--------------------
+Read the DOC info documentation with:
+
+  :Vinfo doc
+
+
+
+Use Vinfo outside Vim
+---------------------
+TODO: fill this section
+
+==============================================================================
+CLEAN REPOSITORY                                             *vinfo-repository*
+
+When system Info documentation files has been updated Vinfo will still use the
+old ones, so you need to clean the current repository in order to update the
+info documentation files that Vinfo uses.
+
+Clean the repository with:
+
+  :VinfoClean
+
+==============================================================================
+CREDITS                                                         *vinfo-credits*
+
+Developed by Daniel Campoverde [alx741] <github.com/alx741>.
+
+Git repository:       https://github.com/alx741/vinfo
+
+==============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
