@@ -43,7 +43,20 @@ Read [Glibc](http://www.gnu.org/software/libc/) Info documentation
 3.2 Use outside Vim
 -------------------
 
-TODO: fill this section
+When your are not inside a Vim session but in the shell prompt you can invoke
+Vinfo as a command by using the following shell script:
+
+        #! /bin/sh
+        vim -c "Vinfo $1" -c 'only'
+
+Save it in '/usr/bin/' as a file named 'vinfo.sh', give it execution
+permission with:
+
+    $ chmod +x /usr/bin/vinfo.sh
+
+Then from your shell you can read a DOC with:
+
+    $ vinfo doc
 
 
 
