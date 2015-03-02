@@ -26,6 +26,7 @@ endfunction
 " create(path, doc) {{{1
 " Create and split info plain text files of DOC in repo PATH
 function! vinfo#repo#create(path, doc)
+    echom '[Vinfo] Creating repo for: ' . a:doc
     let l:doc_path = a:path . '/' . a:doc . '/'
     let l:doc = l:doc_path . a:doc . '.txt'
     exe 'silent !mkdir ' . l:doc_path
@@ -41,6 +42,7 @@ endfunction
 " clean(path) {{{1
 " Clean all docs in repo PATH
 function! vinfo#repo#clean(path)
+    echom '[Vinfo] Cleaning repository'
     exe 'silent !rm -rf ' . a:path . '/*'
     exe 'redraw!'
 endfunction
