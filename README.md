@@ -49,7 +49,7 @@ Vinfo as a command by using the following shell script:
         #! /bin/sh
         vim -c "Vinfo $1" -c 'only'
 
-Save it in '/usr/bin/' as a file named 'vinfo', give it execution
+Save it in `/usr/bin/` as a file named `vinfo`, give it execution
 permission with:
 
     $ chmod +x /usr/bin/vinfo
