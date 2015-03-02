@@ -11,7 +11,8 @@ function! vinfo#repo#exists(path, doc)
     let l:dirs = split(globpath(a:path, '*'), '\n')
 
     for l:dir in l:dirs
-        if l:dir ==? a:doc
+        let l:doc_dir = a:path . '/' . a:doc
+        if l:dir ==? l:doc_dir
             return 1
         endif
     endfor
