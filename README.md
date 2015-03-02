@@ -72,3 +72,23 @@ In Vim execute:
 
 No. It's just for GNU/Linux systems.
 [Info is the GNU documentation system](http://www.gnu.org/software/texinfo/manual/info/info.html)
+
+
+
+5. MISC
+=======
+
+5.1 How it looks
+----------------
+
+Reading `Glibc` Info documentation
+
+
+With traditional *Info*:
+
+![Info](http://i.imgur.com/tDvvj6r.png)
+
+
+With *Vinfo*:
+
+![Vinfo](http://i.imgur.com/eJCf9K2.png)
