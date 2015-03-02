@@ -28,6 +28,8 @@ function! vinfo#load_doc(doc)
                 exe 'bdelete! ' . prev_buff
             endif
             let prev_buff = bufnr(bufname("%"))
+            " Write appropriate options
+            exe '! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
         endfor
         exe 'bdelete! ' . prev_buff
         " Create tags
@@ -44,6 +46,5 @@ endfunction
 function! vinfo#show(doc)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00.txt'
-    " set ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted
 endfunction
 " }}}1
