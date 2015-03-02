@@ -63,6 +63,7 @@ Don't worry, it's just the very first time. Then it will be ok.
 ------------------------------------------------------------------------
 
 In Vim execute:
+
     :VinfoClean
 
 
