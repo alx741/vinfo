@@ -19,19 +19,14 @@ function! vinfo#load_doc(doc)
     else
         call vinfo#repo#create(s:vinfo_repo_path, a:doc)
         let doc_files = split(globpath(s:vinfo_repo_path . '/' . a:doc, '*'), '\n')
-        let prev_buff = 0
         for doc_file in doc_files
             exe 'edit ' . doc_file
             call vinfo#conversion#info2help()
             write!
-            if prev_buff != 0
-                exe 'bdelete! ' . prev_buff
-            endif
-            let prev_buff = bufnr(bufname("%"))
+            exe 'silent bdelete!'
             " Write appropriate options
-            exe '! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
+            exe 'silent ! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
         endfor
-        exe 'bdelete! ' . prev_buff
         " Create tags
         exe 'helptags ' . s:vinfo_repo_path . '/' . a:doc . '/'
         call vinfo#show(a:doc)
