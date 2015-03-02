@@ -30,6 +30,8 @@ function! vinfo#load_doc(doc)
             let prev_buff = bufnr(bufname("%"))
         endfor
         exe 'bdelete! ' . prev_buff
+        " Create tags
+        exe 'helptags ' . s:vinfo_repo_path . '/' . a:doc . '/'
         call vinfo#show(a:doc)
     endif
 endfunction
@@ -42,6 +44,6 @@ endfunction
 function! vinfo#show(doc)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00.txt'
-    setlocal ft=help bt=help bufhidden=delete readonly nomodifiable nobuflisted
+    " set ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted
 endfunction
 " }}}1
