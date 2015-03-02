@@ -59,7 +59,15 @@ files to Vim help-file syntax and create the tags.
 Don't worry, it's just the very first time. Then it will be ok.
 
 
-4.2 My Info files has been updated but Vinfo is still using the old ones
+4.2 Why the first time I open a Info doc Vim interface freaks out?
+------------------------------------------------------------------
+
+Because of the same reason of `4.1`
+
+But again: Don't worry, it's just the very first time. Then it will be ok.
+
+
+4.3 My Info files has been updated but Vinfo is still using the old ones
 ------------------------------------------------------------------------
 
 In Vim execute:
@@ -67,7 +75,7 @@ In Vim execute:
     :VinfoClean
 
 
-4.3 Does Vinfo works in Mac or Windows?
+4.4 Does Vinfo works in Mac or Windows?
 ---------------------------------------
 
 No. It's just for GNU/Linux systems.
