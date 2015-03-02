@@ -33,6 +33,9 @@ Read the DOC info documentation with:
 
   :Vinfo doc
 
+* The first time you read a info doc file, it will take Vinfo a few secods
+* to create a repo and convert the info file to Vim help-text syntax. But
+* don't worry, it's just the first time.
 
 
 Use Vinfo outside Vim
