@@ -48,3 +48,12 @@ function! vinfo#show(doc)
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00.txt'
 endfunction
 " }}}1
+
+
+
+" clean_repo() {{{1
+" vinfo#repo#clean(path) wrapper function
+function! vinfo#clean_repo()
+    call vinfo#repo#clean(s:vinfo_repo_path)
+endfunction
+" }}}1
