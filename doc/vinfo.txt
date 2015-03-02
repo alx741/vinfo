@@ -46,10 +46,10 @@ Vinfo as a command by using the following shell script:
   #! /bin/sh
   vim -c "Vinfo $1" -c 'only'
 
-Save it in '/usr/bin/' as a file named 'vinfo.sh', give it execution
+Save it in '/usr/bin/' as a file named 'vinfo', give it execution
 permission with:
 
-  $ chmod +x /usr/bin/vinfo.sh
+  $ chmod +x /usr/bin/vinfo
 
 Then from your shell you can read a DOC with:
 
