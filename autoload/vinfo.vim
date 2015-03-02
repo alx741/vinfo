@@ -42,5 +42,6 @@ endfunction
 function! vinfo#show(doc)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00'
+    setlocal ft=help bt=help bufhidden=delete readonly nomodifiable nobuflisted
 endfunction
 " }}}1
