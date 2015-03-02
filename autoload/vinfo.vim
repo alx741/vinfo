@@ -5,7 +5,7 @@
 " =============================================================================
 
 
-let s:vinfo_autoload_path = expand('%:p:h')
+let s:vinfo_autoload_path = expand('<sfile>:p:h')
 let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_doc_repo', ':p:h')
 
 
