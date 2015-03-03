@@ -15,7 +15,7 @@ not good enough; it's very limited and ugly. There are good alternatives though,
 as *Pinfo* but is still not comfortable enough and lacking most of the Vim power.
 
 There is where **Vinfo** comes in to allow reading Info documentation in Vim
-so we have all the power we need to reed and explore in such a comfortable way
+so we have all the power we need to read and explore in such a comfortable way
 and with the beauty and power off Vim help-files.
 
 
