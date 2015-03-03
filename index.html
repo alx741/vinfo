@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Vinfo by alx741</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Vinfo</h1>
+        <h2>Vim info documentation reader, allows to read info pages when inside a Vim session or from the shell prompt (instead of Info)</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/alx741/vinfo/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/alx741/vinfo/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/alx741/vinfo" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="1-introduction" class="anchor" href="#1-introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Introduction</h1>
+
+<p>Vinfo is a Vim plugin that allows you to read
+<a href="http://www.gnu.org/software/texinfo/"> Info documentation files </a> right inside a
+Vim session in a Vim-help fashioned way or from a shell just the way you normally use
+<a href="http://www.gnu.org/software/texinfo/manual/info/info.html#Top"> Info </a></p>
+
+<h2>
+<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
+
+<p>The traditional GNU <em>Info</em> program has a 'vi mode', but lets face it, it is just
+not good enough; it's very limited and ugly. There are good alternatives though,
+as <em>Pinfo</em> but is still not comfortable enough and lacking most of the Vim power.</p>
+
+<p>There is where <strong>Vinfo</strong> comes in to allow reading Info documentation in Vim
+so we have all the power we need to read and explore in such a comfortable way
+and with the beauty and power off Vim help-files.</p>
+
+<h1>
+<a id="2-installation" class="anchor" href="#2-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Installation</h1>
+
+<ul>
+<li><p>Vinfo is <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>/
+<a href="https://github.com/gmarik/Vundle.vim">Vundle</a> compatible.</p></li>
+<li><p>Or install it manually by copying the files to the corresponding locations.</p></li>
+</ul>
+
+<h1>
+<a id="3-usage" class="anchor" href="#3-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Usage</h1>
+
+<p>Vinfo can be used right inside a Vim session or from a shell using an alias.</p>
+
+<h2>
+<a id="31-use-inside-vim" class="anchor" href="#31-use-inside-vim" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.1 Use inside Vim</h2>
+
+<p>You can use Vinfo inside Vim with:</p>
+
+<pre><code>:Vinfo doc
+</code></pre>
+
+<p>Where <code>doc</code> is the Info documentation to read.</p>
+
+<p>Example:
+Read <a href="http://www.gnu.org/software/libc/">Glibc</a> Info documentation</p>
+
+<pre><code>:Vinfo libc
+</code></pre>
+
+<h2>
+<a id="32-use-outside-vim" class="anchor" href="#32-use-outside-vim" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.2 Use outside Vim</h2>
+
+<p>When your are not inside a Vim session but in the shell prompt you can invoke
+Vinfo as a command by using the following shell script:</p>
+
+<pre><code>    #! /bin/sh
+    vim -c "Vinfo $1" -c 'only'
+</code></pre>
+
+<p>Save it in <code>/usr/bin/</code> as a file named <code>vinfo</code>, give it execution
+permission with:</p>
+
+<pre><code>$ chmod +x /usr/bin/vinfo
+</code></pre>
+
+<p>Then from your shell you can read a DOC with:</p>
+
+<pre><code>$ vinfo doc
+</code></pre>
+
+<h1>
+<a id="4-faq" class="anchor" href="#4-faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. FAQ</h1>
+
+<h2>
+<a id="41-why-the-first-time-i-open-a-info-doc-is-too-slow" class="anchor" href="#41-why-the-first-time-i-open-a-info-doc-is-too-slow" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.1 Why the first time I open a Info doc is too slow</h2>
+
+<p>The first time Vinfo will create an repo for that Info doc, convert the text
+files to Vim help-file syntax and create the tags.</p>
+
+<p>Don't worry, it's just the very first time. Then it will be ok.</p>
+
+<h2>
+<a id="42-why-the-first-time-i-open-a-info-doc-vim-interface-freaks-out" class="anchor" href="#42-why-the-first-time-i-open-a-info-doc-vim-interface-freaks-out" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.2 Why the first time I open a Info doc Vim interface freaks out?</h2>
+
+<p>Because of the same reason of <code>4.1</code></p>
+
+<p>But again: Don't worry, it's just the very first time. Then it will be ok.</p>
+
+<h2>
+<a id="43-my-info-files-has-been-updated-but-vinfo-is-still-using-the-old-ones" class="anchor" href="#43-my-info-files-has-been-updated-but-vinfo-is-still-using-the-old-ones" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3 My Info files has been updated but Vinfo is still using the old ones</h2>
+
+<p>In Vim execute:</p>
+
+<pre><code>:VinfoClean
+</code></pre>
+
+<h2>
+<a id="44-does-vinfo-works-in-mac-or-windows" class="anchor" href="#44-does-vinfo-works-in-mac-or-windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4 Does Vinfo works in Mac or Windows?</h2>
+
+<p>No. It's just for GNU/Linux systems.
+<a href="http://www.gnu.org/software/texinfo/manual/info/info.html">Info is the GNU documentation system</a></p>
+
+<h1>
+<a id="5-misc" class="anchor" href="#5-misc" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. MISC</h1>
+
+<h2>
+<a id="51-how-it-looks" class="anchor" href="#51-how-it-looks" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.1 How it looks</h2>
+
+<p>Reading <code>Glibc</code> Info documentation</p>
+
+<p>With traditional <em>Info</em>:</p>
+
+<p><img src="http://i.imgur.com/tDvvj6r.png" alt="Info"></p>
+
+<p>With <em>Vinfo</em>:</p>
+
+<p><img src="http://i.imgur.com/eJCf9K2.png" alt="Vinfo"></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
