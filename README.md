@@ -124,4 +124,4 @@ With traditional *Info*:
 
 With *Vinfo*:
 
-[Vinfo](http://i.imgur.com/eJCf9K2.png)
+![Vinfo](http://i.imgur.com/eJCf9K2.png)
