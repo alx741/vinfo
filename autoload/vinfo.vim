@@ -26,6 +26,7 @@ function! vinfo#load_doc(doc)
         " Repo creation failed
         if created_repo ==? 0
             echom '[Vinfo] Invalid DOC: ' . a:doc . '  (No repo created)'
+            exe 'redraw!'
             return 0
         endif
 
@@ -52,6 +53,7 @@ endfunction
 function! vinfo#show(doc)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . '00.txt'
+    exe 'redraw!'
 endfunction
 " }}}1
 
