@@ -14,10 +14,21 @@ let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_do
 " Load help-files for DOC info doc or create it if it doesn't exist
 function! vinfo#load_doc(doc)
     let exist = vinfo#repo#exists(s:vinfo_repo_path, a:doc)
+
+    " Repo exists
     if exist
         call vinfo#show(a:doc)
+
+    " Repo does not exists (create it)
     else
-        call vinfo#repo#create(s:vinfo_repo_path, a:doc)
+        let created_repo = vinfo#repo#create(s:vinfo_repo_path, a:doc)
+
+        " Repo creation failed
+        if created_repo ==? 0
+            echom '[Vinfo] Invalid DOC: ' . a:doc . '  (No repo created)'
+            return 0
+        endif
+
         let doc_files = split(globpath(s:vinfo_repo_path . '/' . a:doc, '*'), '\n')
         for doc_file in doc_files
             exe 'edit ' . doc_file

@@ -25,6 +25,7 @@ endfunction
 
 " create(path, doc) {{{1
 " Create and split info plain text files of DOC in repo PATH
+" Returns TRUE if success
 function! vinfo#repo#create(path, doc)
     echom '[Vinfo] Creating repo for: ' . a:doc
     let l:doc_path = a:path . '/' . a:doc . '/'
@@ -34,6 +35,15 @@ function! vinfo#repo#create(path, doc)
     exe 'silent !split -l 5000 -d --additional-suffix .txt ' . l:doc . ' ' . l:doc_path . a:doc
     exe 'silent !rm ' . l:doc
     exe 'redraw!'
+
+    " If DOC is not a valid Info file, none file will be created
+    let l:doc_files = split(globpath(l:doc_path, '*'), '\n')
+    if len(l:doc_files) ==? 0
+        exe 'silent !rmdir ' . l:doc_path
+        return 0
+    endif
+
+    return 1
 endfunction
 " }}}1
 
