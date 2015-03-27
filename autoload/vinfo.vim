@@ -25,7 +25,7 @@ function! vinfo#load_doc(doc)
 
         " Repo creation failed
         if created_repo ==? 0
-            echom '[Vinfo] Invalid DOC: ' . a:doc . '  (No repo created)'
+            echoe '[Vinfo] Invalid DOC: ' . a:doc . '  (No repo created)'
             exe 'redraw!'
             return 0
         endif
