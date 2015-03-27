@@ -50,7 +50,7 @@ endfunction
 " and add '*' tag notation
 function! s:Create_tag()
     " Create self node tag
-    exe 'silent norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
+    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
     let @o = "\n*" . @o . "*\n"
     exe "silent norm! \"op"
     exe 'silent norm! ' .  "j0V\<Esc>"
@@ -61,28 +61,28 @@ function! s:Create_tag()
 
     " Create tag references
     " Node:
-    exe 'silent norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Next:
-    exe 'silent norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'silent! norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Prev:
-    exe 'silent norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'silent! norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         exe 'silent norm! ' . "\'m"
     endif
     " Up:
-    exe 'silent norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
+    exe 'silent! norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
