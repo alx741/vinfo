@@ -44,7 +44,7 @@ When your are not inside a Vim session but in the shell prompt you can invoke
 Vinfo as a command by using the following shell script:
 
   #! /bin/sh
-  vim -c "Vinfo $1" -c 'only'
+  vim -c "Vinfo $1" -c 'silent only'
 
 Save it in '/usr/bin/' as a file named 'vinfo', give it execution
 permission with:
