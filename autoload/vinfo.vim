@@ -79,6 +79,7 @@ endfunction
 " vinfo#repo#clean(path) wrapper function
 function! vinfo#clean_repo()
     call vinfo#repo#clean(s:vinfo_repo_path)
+    echom "[Vinfo] Repository is now empty"
 endfunction
 " }}}1
 
