@@ -35,6 +35,8 @@ and with the beauty and power off Vim help-files.
 
 Vinfo can be used right inside a Vim session or from a shell using an alias.
 
+** For extra details about how to use Vinfo please use `:h Vinfo` **
+
 
 3.1 Use inside Vim
 ------------------
