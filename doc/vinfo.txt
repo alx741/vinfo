@@ -78,9 +78,10 @@ When system Info documentation files has been updated Vinfo will still use the
 old ones, so you need to clean the current repository in order to update the
 info documentation files that Vinfo uses.
 
-Clean the repository with:
 
-  :VinfoClean
+                                              *:VinfoC* *:VinfoClean*
+  :VinfoC[lean]       Clean the Vinfo repository. Use when need to update Info
+                      documentation files that Vinfo uses.
 
 ==============================================================================
 CREDITS                                                         *vinfo-credits*
