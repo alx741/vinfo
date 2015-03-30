@@ -40,12 +40,14 @@ function! vinfo#load_doc(doc)
             return 0
         endif
 
-        " Write appropriate modeline options in repo files
+        " Convert repo files to vim-help files
+        let doc_files = split(globpath(s:vinfo_repo_path . '/' . a:doc, '*'), '\n')
         for doc_file in doc_files
             exe 'edit ' . doc_file
             call vinfo#conversion#info2help()
             write!
             exe 'silent bdelete!'
+            " Write appropriate modeline options in repo files
             exe 'silent ! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
         endfor
 
