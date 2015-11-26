@@ -72,6 +72,7 @@ function! vinfo#show(doc, page)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
     exe 'redraw!'
+    exe 'norm gg'
 endfunction
 " }}}1
 
