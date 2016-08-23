@@ -36,7 +36,7 @@ function! vinfo#load_doc(doc)
             let s:vinfo_current_doc = ''
             let s:vinfo_current_page = 0
             let s:vinfo_current_doc_pages = 0
-            exe 'redraw!'
+            redraw!
             return 0
         endif
 
@@ -46,7 +46,7 @@ function! vinfo#load_doc(doc)
             exe 'edit ' . doc_file
             call vinfo#conversion#info2help()
             write!
-            exe 'silent bdelete!'
+            silent bdelete!
             " Write appropriate modeline options in repo files
             exe 'silent ! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
         endfor
@@ -71,8 +71,8 @@ function! vinfo#show(doc, page)
 
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
-    exe 'redraw!'
-    exe 'norm gg'
+    redraw!
+    norm gg
 endfunction
 " }}}1
 
