@@ -27,7 +27,7 @@ function! vinfo#conversion#info2help()
 
     " Create tag references
     " Change blank spaces, '-' with '_' and apply tag notation with '|'
-    silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V /_/ge|s/\%V-/_/ge
+    silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V[ -]/_/ge
     silent %s/\v^\*\s+(.+)::/\* |\1|::/e
 
     " Remove false tags
@@ -61,28 +61,28 @@ function! s:Create_tag()
     " Node:
     exe 'silent! norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V /_/ge|s/\%V-/_/ge
+        silent s/\%V[ -]/_/ge
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         silent norm! 'm
     endif
     " Next:
     exe 'silent! norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V /_/ge|s/\%V-/_/ge
+        silent s/\%V[ -]/_/ge
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         silent norm! 'm
     endif
     " Prev:
     exe 'silent! norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V /_/ge|s/\%V-/_/ge
+        silent s/\%V[ -]/_/ge
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         silent norm! 'm
     endif
     " Up:
     exe 'silent! norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V /_/ge|s/\%V-/_/ge
+        silent s/\%V[ -]/_/ge
         exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
         silent norm! 'm
     endif
