@@ -62,28 +62,28 @@ function! s:Create_tag()
     exe 'silent! norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         silent s/\%V[ -]/_/ge
-        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+	silent s/\%V.*\%V./|&|/
         silent norm! 'm
     endif
     " Next:
     exe 'silent! norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         silent s/\%V[ -]/_/ge
-        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+	silent s/\%V.*\%V./|&|/
         silent norm! 'm
     endif
     " Prev:
     exe 'silent! norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         silent s/\%V[ -]/_/ge
-        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+	silent s/\%V.*\%V./|&|/
         silent norm! 'm
     endif
     " Up:
     exe 'silent! norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         silent s/\%V[ -]/_/ge
-        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+	silent s/\%V.*\%V./|&|/
         silent norm! 'm
     endif
 endfunction
