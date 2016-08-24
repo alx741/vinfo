@@ -54,10 +54,9 @@ function! s:Create_tag()
     " Create self node tag
     exe 'silent! norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
     let @o = "\n*" . @o . "*\n"
-    silent norm! "op
-    silent norm! j0V
-    silent s/\%V /_/ge
-    silent s/\%V-/_/ge
+    silent put o
+    silent +1
+    silent s/[- ]/_/ge
     silent right
     silent norm! 'm
 
