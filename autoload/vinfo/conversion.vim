@@ -15,7 +15,6 @@ function! vinfo#conversion#info2help()
     " Add vim modelines for help-file
     " tw=78 ts=8 ft=help norl
     silent norm! Go vim:tw=78:ts=8:ft=help:norl:
-    silent norm! gg
 
     " Convert node subtitles (replace = and . underlining with -)
     silent g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
