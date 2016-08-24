@@ -17,13 +17,11 @@ function! vinfo#conversion#info2help()
     silent norm! Go vim:tw=78:ts=8:ft=help:norl:
     silent norm! gg
 
-    " Convert node subtitles (replace = underlining with -)
-    silent g/\v^$\n.+\n\=+\n^$\n/norm! jjvg_r-
-    " Convert node subtitles (replace . underlining with -)
-    silent g/\v^$\n.+\n\.+\n^$\n/norm! jjvg_r-
+    " Convert node subtitles (replace = and . underlining with -)
+    silent g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
 
     " Convert node titles (replace * underlining with =)
-    silent g/\v^$\n.+\n\*+\n^$\n/norm! jjvg_r=
+    silent g/\v^$\n.+\n\*+\n^$\n/+2 s/\*/=/g
 
     " Convert Menu marks to vim help-files syntax
     silent %s/^* Menu:/MENU/e
