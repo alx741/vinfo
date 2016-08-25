@@ -65,30 +65,26 @@ function! s:Create_tag()
     " Node:
     /\vNode: \zs
     norm! 0nvt,y
-    if @@ !~? '.\+|' && @@ !~? '.\+)'
-        s/\%V[ -]/_/ge
-        s/\%V.*\%V./|&|/
-        norm! 'm
-    endif
+    call s:Format_tag()
     " Next:
     /\vNext: \zs
     norm! 0nvt,y
-    if @@ !~? '.\+|' && @@ !~? '.\+)'
-        s/\%V[ -]/_/ge
-        s/\%V.*\%V./|&|/
-        norm! 'm
-    endif
+    call s:Format_tag()
     " Prev:
     /\vPrev: \zs
     norm! 0nvt,y
-    if @@ !~? '.\+|' && @@ !~? '.\+)'
-        s/\%V[ -]/_/ge
-        s/\%V.*\%V./|&|/
-        norm! 'm
-    endif
+    call s:Format_tag()
     " Up:
     /\vUp: \zs
     norm! 0nvg_y
+    call s:Format_tag()
+endfunction
+" }}}1
+
+
+
+" Format_Tag() {{{1
+function! s:Format_tag()
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         s/\%V[ -]/_/ge
         s/\%V.*\%V./|&|/
