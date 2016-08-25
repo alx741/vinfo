@@ -44,7 +44,7 @@ function! vinfo#load_doc(doc)
         let doc_files = split(globpath(s:vinfo_repo_path . '/' . a:doc, '*'), '\n')
         for doc_file in doc_files
             exe 'edit ' . doc_file
-            call vinfo#conversion#info2help()
+            silent call vinfo#conversion#info2help()
             write!
             silent bdelete!
             " Write appropriate modeline options in repo files

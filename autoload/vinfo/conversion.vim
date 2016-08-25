@@ -14,31 +14,31 @@ function! vinfo#conversion#info2help()
 
     " Add vim modelines for help-file
     " tw=78 ts=8 ft=help norl
-    silent norm! Go vim:tw=78:ts=8:ft=help:norl:
+    norm! Go vim:tw=78:ts=8:ft=help:norl:
 
     " Convert node subtitles (replace = and . underlining with -)
-    silent g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
+    g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
 
     " Convert node titles (replace * underlining with =)
-    silent g/\v^$\n.+\n\*+\n^$\n/+2 s/\*/=/g
+    g/\v^$\n.+\n\*+\n^$\n/+2 s/\*/=/g
 
     " Convert Menu marks to vim help-files syntax
-    silent %s/^* Menu:/MENU/e
+    %s/^* Menu:/MENU/e
 
     " Create tag references
     " Change blank spaces, '-' with '_' and apply tag notation with '|'
-    silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V[ -]/_/ge
-    silent %s/\v^\*\s+(.+)::/\* |\1|::/e
+    g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V[ -]/_/ge
+    %s/\v^\*\s+(.+)::/\* |\1|::/e
 
     " Remove false tags
-    silent g/\v\*[^\* ]+\*/ norm! f*xf*x
+    g/\v\*[^\* ]+\*/ norm! f*xf*x
 
     " Create tags
-    silent g/\v^File: /call s:Create_tag()
+    g/\v^File: /call s:Create_tag()
 
     " Mark Nodes separations
     let @o = "==============================================================================\n"
-    silent g/\v^File: /norm! "oPj"op
+    g/\v^File: /norm! "oPj"op
 endfunction
 " }}}1
 
@@ -49,42 +49,42 @@ endfunction
 " and add '*' tag notation
 function! s:Create_tag()
     " Create self node tag
-    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
+    exe 'norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
     let @o = "\n*" . @o . "*\n"
-    silent put o
-    silent +1
-    silent s/[- ]/_/ge
-    silent right
-    silent norm! 'm
+    put o
+    +1
+    s/[- ]/_/ge
+    right
+    norm! 'm
 
     " Create tag references
     " Node:
-    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V[ -]/_/ge
-	silent s/\%V.*\%V./|&|/
-        silent norm! 'm
+        s/\%V[ -]/_/ge
+        s/\%V.*\%V./|&|/
+        norm! 'm
     endif
     " Next:
-    exe 'silent! norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V[ -]/_/ge
-	silent s/\%V.*\%V./|&|/
-        silent norm! 'm
+        s/\%V[ -]/_/ge
+        s/\%V.*\%V./|&|/
+        norm! 'm
     endif
     " Prev:
-    exe 'silent! norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
+    exe 'norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V[ -]/_/ge
-	silent s/\%V.*\%V./|&|/
-        silent norm! 'm
+        s/\%V[ -]/_/ge
+        s/\%V.*\%V./|&|/
+        norm! 'm
     endif
     " Up:
-    exe 'silent! norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
+    exe 'norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        silent s/\%V[ -]/_/ge
-	silent s/\%V.*\%V./|&|/
-        silent norm! 'm
+        s/\%V[ -]/_/ge
+        s/\%V.*\%V./|&|/
+        norm! 'm
     endif
 endfunction
 " }}}1
