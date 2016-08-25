@@ -49,7 +49,11 @@ endfunction
 " and add '*' tag notation
 function! s:Create_tag()
     " Create self node tag
-    exe 'norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
+    /\vNode: \zs
+    " / in scripts only moves to the line of the match, not to the match
+    " because it is actually :/ and not plain /.  Therefore we use 0n to move
+    " to the match.
+    norm! 0n"oyt,mm
     let @o = "\n*" . @o . "*\n"
     put o
     +1
@@ -59,28 +63,32 @@ function! s:Create_tag()
 
     " Create tag references
     " Node:
-    exe 'norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
+    /\vNode: \zs
+    norm! 0nvt,y
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         s/\%V[ -]/_/ge
         s/\%V.*\%V./|&|/
         norm! 'm
     endif
     " Next:
-    exe 'norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
+    /\vNext: \zs
+    norm! 0nvt,y
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         s/\%V[ -]/_/ge
         s/\%V.*\%V./|&|/
         norm! 'm
     endif
     " Prev:
-    exe 'norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
+    /\vPrev: \zs
+    norm! 0nvt,y
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         s/\%V[ -]/_/ge
         s/\%V.*\%V./|&|/
         norm! 'm
     endif
     " Up:
-    exe 'norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
+    /\vUp: \zs
+    norm! 0nvg_y
     if @@ !~? '.\+|' && @@ !~? '.\+)'
         s/\%V[ -]/_/ge
         s/\%V.*\%V./|&|/
