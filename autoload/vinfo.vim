@@ -65,8 +65,7 @@ endfunction
 function! vinfo#show(doc, page)
     " Convert page number to appropriate -two digits- format
     let page_number = printf('%02d', a:page)
-    split
-    exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
+    exe 'split ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
     redraw!
     norm gg
 endfunction
