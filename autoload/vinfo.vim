@@ -64,11 +64,7 @@ endfunction
 " Shos the DOC info doc in a new split window
 function! vinfo#show(doc, page)
     " Convert page number to appropriate -two digits- format
-    let page_number = ''
-    if a:page <? 10
-        let page_number = '0' . a:page
-    endif
-
+    let page_number = printf('%02d', a:page)
     split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
     redraw!
