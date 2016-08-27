@@ -5,8 +5,7 @@
 " =============================================================================
 
 
-let s:vinfo_autoload_path = expand('<sfile>:p:h')
-let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_doc_repo', ':p:h')
+let s:vinfo_repo_path = ($XDG_DATA_HOME ? $XDG_DATA_HOME : expand('~/.local/share')) . '/vinfo'
 let s:vinfo_current_doc = ""
 let s:vinfo_current_page = 0
 let s:vinfo_current_doc_pages = 0
