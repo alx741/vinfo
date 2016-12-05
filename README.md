@@ -1,20 +1,20 @@
 1. Introduction
 ===============
 
-Vinfo is a Vim plugin that allows you to read
-[ Info documentation files ]( http://www.gnu.org/software/texinfo/ ) right inside a
-Vim session in a Vim-help fashioned way or from a shell just the way you normally use
-[ Info ]( http://www.gnu.org/software/texinfo/manual/info/info.html#Top )
+Vinfo is a Vim plugin that allows you to read [ Info documentation files ](
+http://www.gnu.org/software/texinfo/ ) right inside a Vim session with a
+*Vim-help* fashioned way, or from a shell just the way you would normally use [
+Info ]( http://www.gnu.org/software/texinfo/manual/info/info.html#Top )
 
 
 Why?
 ----
 
-The traditional GNU *Info* program has a 'vi mode', but lets face it, it is just
+The traditional GNU *Info* program has a 'vi mode', but lets face it, it's just
 not good enough; it's very limited and ugly. There are good alternatives though,
-as *Pinfo* but is still not comfortable enough and lacking most of the Vim power.
+but they're still not comfortable enough and lacking most of the Vim power.
 
-There is where **Vinfo** comes in to allow reading Info documentation in Vim
+That is where **Vinfo** comes in to allow reading Info documentation in Vim
 so we have all the power we need to read and explore in such a comfortable way
 and with the beauty and power off Vim help-files.
 
@@ -80,7 +80,7 @@ Then from your shell you can read a DOC with:
 4.1 Why the first time I open an Info doc is too slow
 -----------------------------------------------------
 
-The first time Vinfo will create an repo for that Info doc, convert the text
+The first time *Vinfo* will create a repo for that Info doc, convert the text
 files to Vim help-file syntax and create the tags.
 
 Don't worry, it's just the very first time. Then it will be ok.
