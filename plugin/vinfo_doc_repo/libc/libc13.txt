@@ -1,0 +1,5002 @@
+'tcflag_t IGNPAR'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'int ilogb (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'int ilogbf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'int ilogbl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'intmax_t imaxabs (intmax_t NUMBER)'
+
+     'inttypes.h' (ISO): *note Absolute Value::.
+
+'tcflag_t IMAXBEL'
+
+     'termios.h' (BSD): *note Input Modes::.
+
+'imaxdiv_t imaxdiv (intmax_t NUMERATOR, intmax_t DENOMINATOR)'
+
+     'inttypes.h' (ISO): *note Integer Division::.
+
+'imaxdiv_t'
+
+     'inttypes.h' (ISO): *note Integer Division::.
+
+'struct in6_addr in6addr_any'
+
+     'netinet/in.h' (IPv6 basic API): *note Host Address Data Type::.
+
+'struct in6_addr in6addr_loopback'
+
+     'netinet/in.h' (IPv6 basic API): *note Host Address Data Type::.
+
+'uint32_t INADDR_ANY'
+
+     'netinet/in.h' (BSD): *note Host Address Data Type::.
+
+'uint32_t INADDR_BROADCAST'
+
+     'netinet/in.h' (BSD): *note Host Address Data Type::.
+
+'uint32_t INADDR_LOOPBACK'
+
+     'netinet/in.h' (BSD): *note Host Address Data Type::.
+
+'uint32_t INADDR_NONE'
+
+     'netinet/in.h' (BSD): *note Host Address Data Type::.
+
+'char * index (const char *STRING, int C)'
+
+     'string.h' (BSD): *note Search Functions::.
+
+'uint32_t inet_addr (const char *NAME)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'int inet_aton (const char *NAME, struct in_addr *ADDR)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'uint32_t inet_lnaof (struct in_addr ADDR)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'struct in_addr inet_makeaddr (uint32_t NET, uint32_t LOCAL)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'uint32_t inet_netof (struct in_addr ADDR)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'uint32_t inet_network (const char *NAME)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'char * inet_ntoa (struct in_addr ADDR)'
+
+     'arpa/inet.h' (BSD): *note Host Address Functions::.
+
+'const char * inet_ntop (int AF, const void *CP, char *BUF, socklen_t LEN)'
+
+     'arpa/inet.h' (IPv6 basic API): *note Host Address Functions::.
+
+'int inet_pton (int AF, const char *CP, void *BUF)'
+
+     'arpa/inet.h' (IPv6 basic API): *note Host Address Functions::.
+
+'float INFINITY'
+
+     'math.h' (ISO): *note Infinity and NaN::.
+
+'int initgroups (const char *USER, gid_t GROUP)'
+
+     'grp.h' (BSD): *note Setting Groups::.
+
+'INIT_PROCESS'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'INIT_PROCESS'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'char * initstate (unsigned int SEED, char *STATE, size_t SIZE)'
+
+     'stdlib.h' (BSD): *note BSD Random::.
+
+'int initstate_r (unsigned int SEED, char *restrict STATEBUF, size_t STATELEN, struct random_data *restrict BUF)'
+
+     'stdlib.h' (GNU): *note BSD Random::.
+
+'tcflag_t INLCR'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'int innetgr (const char *NETGROUP, const char *HOST, const char *USER, const char *DOMAIN)'
+
+     'netdb.h' (BSD): *note Netgroup Membership::.
+
+'ino64_t'
+
+     'sys/types.h' (Unix98): *note Attribute Meanings::.
+
+'ino_t'
+
+     'sys/types.h' (POSIX.1): *note Attribute Meanings::.
+
+'tcflag_t INPCK'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'INT_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'INT_MIN'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'INTPTR_WIDTH'
+
+     'stdint.h' (ISO): *note Width of Type::.
+
+'INT_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'int ioctl (int FILEDES, int COMMAND, ...)'
+
+     'sys/ioctl.h' (BSD): *note IOCTLs::.
+
+'int _IOFBF'
+
+     'stdio.h' (ISO): *note Controlling Buffering::.
+
+'int _IOLBF'
+
+     'stdio.h' (ISO): *note Controlling Buffering::.
+
+'int _IONBF'
+
+     'stdio.h' (ISO): *note Controlling Buffering::.
+
+'int IPPORT_RESERVED'
+
+     'netinet/in.h' (BSD): *note Ports::.
+
+'int IPPORT_USERRESERVED'
+
+     'netinet/in.h' (BSD): *note Ports::.
+
+'int isalnum (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int isalpha (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int isascii (int C)'
+
+     'ctype.h' (SVID, BSD): *note Classification of Characters::.
+
+'int isatty (int FILEDES)'
+
+     'unistd.h' (POSIX.1): *note Is It a Terminal::.
+
+'int isblank (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int iscanonical (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'int iscntrl (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int isdigit (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int iseqsig (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int isfinite (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'int isgraph (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int isgreater (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int isgreaterequal (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'tcflag_t ISIG'
+
+     'termios.h' (POSIX.1): *note Local Modes::.
+
+'int isinf (double X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isinff (float X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isinfl (long double X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isless (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int islessequal (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int islessgreater (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int islower (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int isnan (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'int isnan (double X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isnanf (float X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isnanl (long double X)'
+
+     'math.h' (BSD): *note Floating Point Classes::.
+
+'int isnormal (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'_ISOC99_SOURCE'
+
+     (GNU): *note Feature Test Macros::.
+
+'int isprint (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int ispunct (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int issignaling (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'int isspace (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int issubnormal (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'tcflag_t ISTRIP'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'int isunordered (_real-floating_ X, _real-floating_ Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int isupper (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int iswalnum (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswalpha (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswblank (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswcntrl (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswctype (wint_t WC, wctype_t DESC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswdigit (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswgraph (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswlower (wint_t WC)'
+
+     'ctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswprint (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswpunct (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswspace (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswupper (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int iswxdigit (wint_t WC)'
+
+     'wctype.h' (ISO): *note Classification of Wide Characters::.
+
+'int isxdigit (int C)'
+
+     'ctype.h' (ISO): *note Classification of Characters::.
+
+'int iszero (_float-type_ X)'
+
+     'math.h' (ISO): *note Floating Point Classes::.
+
+'ITIMER_PROF'
+
+     'sys/time.h' (BSD): *note Setting an Alarm::.
+
+'ITIMER_REAL'
+
+     'sys/time.h' (BSD): *note Setting an Alarm::.
+
+'ITIMER_VIRTUAL'
+
+     'sys/time.h' (BSD): *note Setting an Alarm::.
+
+'tcflag_t IXANY'
+
+     'termios.h' (BSD): *note Input Modes::.
+
+'tcflag_t IXOFF'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'tcflag_t IXON'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'double j0 (double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'float j0f (float X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'long double j0l (long double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'double j1 (double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'float j1f (float X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'long double j1l (long double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'jmp_buf'
+
+     'setjmp.h' (ISO): *note Non-Local Details::.
+
+'double jn (int N, double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'float jnf (int N, float X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'long double jnl (int N, long double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'long int jrand48 (unsigned short int XSUBI[3])'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int jrand48_r (unsigned short int XSUBI[3], struct drand48_data *BUFFER, long int *RESULT)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'int kill (pid_t PID, int SIGNUM)'
+
+     'signal.h' (POSIX.1): *note Signaling Another Process::.
+
+'int killpg (int PGID, int SIGNUM)'
+
+     'signal.h' (BSD): *note Signaling Another Process::.
+
+'char * l64a (long int N)'
+
+     'stdlib.h' (XPG): *note Encode Binary Data::.
+
+'long int labs (long int NUMBER)'
+
+     'stdlib.h' (ISO): *note Absolute Value::.
+
+'LANG'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'LC_ALL'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'LC_COLLATE'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'LC_CTYPE'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'LC_MESSAGES'
+
+     'locale.h' (XOPEN): *note Locale Categories::.
+
+'LC_MONETARY'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'LC_NUMERIC'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'void lcong48 (unsigned short int PARAM[7])'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int lcong48_r (unsigned short int PARAM[7], struct drand48_data *BUFFER)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'int L_ctermid'
+
+     'stdio.h' (POSIX.1): *note Identifying the Terminal::.
+
+'LC_TIME'
+
+     'locale.h' (ISO): *note Locale Categories::.
+
+'int L_cuserid'
+
+     'stdio.h' (POSIX.1): *note Who Logged In::.
+
+'double ldexp (double VALUE, int EXPONENT)'
+
+     'math.h' (ISO): *note Normalization Functions::.
+
+'float ldexpf (float VALUE, int EXPONENT)'
+
+     'math.h' (ISO): *note Normalization Functions::.
+
+'long double ldexpl (long double VALUE, int EXPONENT)'
+
+     'math.h' (ISO): *note Normalization Functions::.
+
+'ldiv_t ldiv (long int NUMERATOR, long int DENOMINATOR)'
+
+     'stdlib.h' (ISO): *note Integer Division::.
+
+'ldiv_t'
+
+     'stdlib.h' (ISO): *note Integer Division::.
+
+'void * lfind (const void *KEY, const void *BASE, size_t *NMEMB, size_t SIZE, comparison_fn_t COMPAR)'
+
+     'search.h' (SVID): *note Array Search Function::.
+
+'double lgamma (double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'float lgammaf (float X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'float lgammaf_r (float X, int *SIGNP)'
+
+     'math.h' (XPG): *note Special Functions::.
+
+'long double lgammal (long double X)'
+
+     'math.h' (SVID): *note Special Functions::.
+
+'long double lgammal_r (long double X, int *SIGNP)'
+
+     'math.h' (XPG): *note Special Functions::.
+
+'double lgamma_r (double X, int *SIGNP)'
+
+     'math.h' (XPG): *note Special Functions::.
+
+'L_INCR'
+
+     'sys/file.h' (BSD): *note File Positioning::.
+
+'int LINE_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Limits::.
+
+'int link (const char *OLDNAME, const char *NEWNAME)'
+
+     'unistd.h' (POSIX.1): *note Hard Links::.
+
+'int LINK_MAX'
+
+     'limits.h',  (optional)’ (POSIX.1): *note Limits for Files::.
+
+'int lio_listio (int MODE, struct aiocb *const LIST[], int NENT, struct sigevent *SIG)'
+
+     'aio.h' (POSIX.1b): *note Asynchronous Reads/Writes::.
+
+'int lio_listio64 (int MODE, struct aiocb64 *const LIST[], int NENT, struct sigevent *SIG)'
+
+     'aio.h' (Unix98): *note Asynchronous Reads/Writes::.
+
+'int listen (int SOCKET, int N)'
+
+     'sys/socket.h' (BSD): *note Listening::.
+
+'long long int llabs (long long int NUMBER)'
+
+     'stdlib.h' (ISO): *note Absolute Value::.
+
+'lldiv_t lldiv (long long int NUMERATOR, long long int DENOMINATOR)'
+
+     'stdlib.h' (ISO): *note Integer Division::.
+
+'lldiv_t'
+
+     'stdlib.h' (ISO): *note Integer Division::.
+
+'long int llogb (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long int llogbf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long int llogbl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'LLONG_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'LLONG_MIN'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'LLONG_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'long long int llrint (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long long int llrintf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long long int llrintl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long long int llround (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long long int llroundf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long long int llroundl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'struct lconv * localeconv (void)'
+
+     'locale.h' (ISO): *note The Lame Way to Locale Data::.
+
+'struct tm * localtime (const time_t *TIME)'
+
+     'time.h' (ISO): *note Broken-down Time::.
+
+'struct tm * localtime_r (const time_t *TIME, struct tm *RESULTP)'
+
+     'time.h' (POSIX.1c): *note Broken-down Time::.
+
+'double log (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'double log10 (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float log10f (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double log10l (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'double log1p (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float log1pf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double log1pl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'double log2 (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float log2f (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double log2l (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'double logb (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float logbf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double logbl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float logf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'void login (const struct utmp *ENTRY)'
+
+     'utmp.h' (BSD): *note Logging In and Out::.
+
+'LOGIN_PROCESS'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'LOGIN_PROCESS'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'int login_tty (int FILEDES)'
+
+     'utmp.h' (BSD): *note Logging In and Out::.
+
+'long double logl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'int logout (const char *UT_LINE)'
+
+     'utmp.h' (BSD): *note Logging In and Out::.
+
+'void logwtmp (const char *UT_LINE, const char *UT_NAME, const char *UT_HOST)'
+
+     'utmp.h' (BSD): *note Logging In and Out::.
+
+'void longjmp (jmp_buf STATE, int VALUE)'
+
+     'setjmp.h' (ISO): *note Non-Local Details::.
+
+'LONG_LONG_MAX'
+
+     'limits.h' (GNU): *note Range of Type::.
+
+'LONG_LONG_MIN'
+
+     'limits.h' (GNU): *note Range of Type::.
+
+'LONG_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'LONG_MIN'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'LONG_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'long int lrand48 (void)'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int lrand48_r (struct drand48_data *BUFFER, long int *RESULT)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'long int lrint (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long int lrintf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long int lrintl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long int lround (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long int lroundf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long int lroundl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'void * lsearch (const void *KEY, void *BASE, size_t *NMEMB, size_t SIZE, comparison_fn_t COMPAR)'
+
+     'search.h' (SVID): *note Array Search Function::.
+
+'off_t lseek (int FILEDES, off_t OFFSET, int WHENCE)'
+
+     'unistd.h' (POSIX.1): *note File Position Primitive::.
+
+'off64_t lseek64 (int FILEDES, off64_t OFFSET, int WHENCE)'
+
+     'unistd.h' (Unix98): *note File Position Primitive::.
+
+'L_SET'
+
+     'sys/file.h' (BSD): *note File Positioning::.
+
+'int lstat (const char *FILENAME, struct stat *BUF)'
+
+     'sys/stat.h' (BSD): *note Reading Attributes::.
+
+'int lstat64 (const char *FILENAME, struct stat64 *BUF)'
+
+     'sys/stat.h' (Unix98): *note Reading Attributes::.
+
+'int L_tmpnam'
+
+     'stdio.h' (ISO): *note Temporary Files::.
+
+'int lutimes (const char *FILENAME, const struct timeval TVP[2])'
+
+     'sys/time.h' (BSD): *note File Times::.
+
+'L_XTND'
+
+     'sys/file.h' (BSD): *note File Positioning::.
+
+'int madvise (void *ADDR, size_t LENGTH, int ADVICE)'
+
+     'sys/mman.h' (POSIX): *note Memory-mapped I/O::.
+
+'void makecontext (ucontext_t *UCP, void (*FUNC) (void), int ARGC, ...)'
+
+     'ucontext.h' (SVID): *note System V contexts::.
+
+'struct mallinfo mallinfo (void)'
+
+     'malloc.h' (SVID): *note Statistics of Malloc::.
+
+'void * malloc (size_t SIZE)'
+
+     'malloc.h',  stdlib.h’ (ISO): *note Basic Allocation::.
+
+'__malloc_hook'
+
+     'malloc.h' (GNU): *note Hooks for Malloc::.
+
+'int MAX_CANON'
+
+     'limits.h' (POSIX.1): *note Limits for Files::.
+
+'int MAX_INPUT'
+
+     'limits.h' (POSIX.1): *note Limits for Files::.
+
+'int MAXNAMLEN'
+
+     'dirent.h' (BSD): *note Limits for Files::.
+
+'int MAXSYMLINKS'
+
+     'sys/param.h' (BSD): *note Symbolic Links::.
+
+'int MB_CUR_MAX'
+
+     'stdlib.h' (ISO): *note Selecting the Conversion::.
+
+'int mblen (const char *STRING, size_t SIZE)'
+
+     'stdlib.h' (ISO): *note Non-reentrant Character Conversion::.
+
+'int MB_LEN_MAX'
+
+     'limits.h' (ISO): *note Selecting the Conversion::.
+
+'size_t mbrlen (const char *restrict S, size_t N, mbstate_t *PS)'
+
+     'wchar.h' (ISO): *note Converting a Character::.
+
+'size_t mbrtowc (wchar_t *restrict PWC, const char *restrict S, size_t N, mbstate_t *restrict PS)'
+
+     'wchar.h' (ISO): *note Converting a Character::.
+
+'int mbsinit (const mbstate_t *PS)'
+
+     'wchar.h' (ISO): *note Keeping the state::.
+
+'size_t mbsnrtowcs (wchar_t *restrict DST, const char **restrict SRC, size_t NMC, size_t LEN, mbstate_t *restrict PS)'
+
+     'wchar.h' (GNU): *note Converting Strings::.
+
+'size_t mbsrtowcs (wchar_t *restrict DST, const char **restrict SRC, size_t LEN, mbstate_t *restrict PS)'
+
+     'wchar.h' (ISO): *note Converting Strings::.
+
+'mbstate_t'
+
+     'wchar.h' (ISO): *note Keeping the state::.
+
+'size_t mbstowcs (wchar_t *WSTRING, const char *STRING, size_t SIZE)'
+
+     'stdlib.h' (ISO): *note Non-reentrant String Conversion::.
+
+'int mbtowc (wchar_t *restrict RESULT, const char *restrict STRING, size_t SIZE)'
+
+     'stdlib.h' (ISO): *note Non-reentrant Character Conversion::.
+
+'int mcheck (void (*ABORTFN) (enum mcheck_status STATUS))'
+
+     'mcheck.h' (GNU): *note Heap Consistency Checking::.
+
+'tcflag_t MDMBUF'
+
+     'termios.h' (BSD): *note Control Modes::.
+
+'void * memalign (size_t BOUNDARY, size_t SIZE)'
+
+     'malloc.h' (BSD): *note Aligned Memory Blocks::.
+
+'__memalign_hook'
+
+     'malloc.h' (GNU): *note Hooks for Malloc::.
+
+'void * memccpy (void *restrict TO, const void *restrict FROM, int C, size_t SIZE)'
+
+     'string.h' (SVID): *note Copying Strings and Arrays::.
+
+'void * memchr (const void *BLOCK, int C, size_t SIZE)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'int memcmp (const void *A1, const void *A2, size_t SIZE)'
+
+     'string.h' (ISO): *note String/Array Comparison::.
+
+'void * memcpy (void *restrict TO, const void *restrict FROM, size_t SIZE)'
+
+     'string.h' (ISO): *note Copying Strings and Arrays::.
+
+'void * memfrob (void *MEM, size_t LENGTH)'
+
+     'string.h' (GNU): *note Trivial Encryption::.
+
+'void * memmem (const void *HAYSTACK, size_t HAYSTACK-LEN,
+const void *NEEDLE, size_t NEEDLE-LEN)'
+
+     'string.h' (GNU): *note Search Functions::.
+
+'void * memmove (void *TO, const void *FROM, size_t SIZE)'
+
+     'string.h' (ISO): *note Copying Strings and Arrays::.
+
+'void * mempcpy (void *restrict TO, const void *restrict FROM, size_t SIZE)'
+
+     'string.h' (GNU): *note Copying Strings and Arrays::.
+
+'void * memrchr (const void *BLOCK, int C, size_t SIZE)'
+
+     'string.h' (GNU): *note Search Functions::.
+
+'void * memset (void *BLOCK, int C, size_t SIZE)'
+
+     'string.h' (ISO): *note Copying Strings and Arrays::.
+
+'int mkdir (const char *FILENAME, mode_t MODE)'
+
+     'sys/stat.h' (POSIX.1): *note Creating Directories::.
+
+'char * mkdtemp (char *TEMPLATE)'
+
+     'stdlib.h' (BSD): *note Temporary Files::.
+
+'int mkfifo (const char *FILENAME, mode_t MODE)'
+
+     'sys/stat.h' (POSIX.1): *note FIFO Special Files::.
+
+'int mknod (const char *FILENAME, mode_t MODE, dev_t DEV)'
+
+     'sys/stat.h' (BSD): *note Making Special Files::.
+
+'int mkstemp (char *TEMPLATE)'
+
+     'stdlib.h' (BSD): *note Temporary Files::.
+
+'char * mktemp (char *TEMPLATE)'
+
+     'stdlib.h' (Unix): *note Temporary Files::.
+
+'time_t mktime (struct tm *BROKENTIME)'
+
+     'time.h' (ISO): *note Broken-down Time::.
+
+'int mlock (const void *ADDR, size_t LEN)'
+
+     'sys/mman.h' (POSIX.1b): *note Page Lock Functions::.
+
+'int mlockall (int FLAGS)'
+
+     'sys/mman.h' (POSIX.1b): *note Page Lock Functions::.
+
+'void * mmap (void *ADDRESS, size_t LENGTH, int PROTECT, int FLAGS, int FILEDES, off_t OFFSET)'
+
+     'sys/mman.h' (POSIX): *note Memory-mapped I/O::.
+
+'void * mmap64 (void *ADDRESS, size_t LENGTH, int PROTECT, int FLAGS, int FILEDES, off64_t OFFSET)'
+
+     'sys/mman.h' (LFS): *note Memory-mapped I/O::.
+
+'mode_t'
+
+     'sys/types.h' (POSIX.1): *note Attribute Meanings::.
+
+'double modf (double VALUE, double *INTEGER-PART)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'float modff (float VALUE, float *INTEGER-PART)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double modfl (long double VALUE, long double *INTEGER-PART)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'int mount (const char *SPECIAL_FILE, const char *DIR, const char *FSTYPE, unsigned long int OPTIONS, const void *DATA)'
+
+     'sys/mount.h' (SVID, BSD): *note Mount-Unmount-Remount::.
+
+'long int mrand48 (void)'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int mrand48_r (struct drand48_data *BUFFER, long int *RESULT)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'void * mremap (void *ADDRESS, size_t LENGTH, size_t NEW_LENGTH, int FLAG)'
+
+     'sys/mman.h' (GNU): *note Memory-mapped I/O::.
+
+'int MSG_DONTROUTE'
+
+     'sys/socket.h' (BSD): *note Socket Data Options::.
+
+'int MSG_OOB'
+
+     'sys/socket.h' (BSD): *note Socket Data Options::.
+
+'int MSG_PEEK'
+
+     'sys/socket.h' (BSD): *note Socket Data Options::.
+
+'int msync (void *ADDRESS, size_t LENGTH, int FLAGS)'
+
+     'sys/mman.h' (POSIX): *note Memory-mapped I/O::.
+
+'void mtrace (void)'
+
+     'mcheck.h' (GNU): *note Tracing malloc::.
+
+'int munlock (const void *ADDR, size_t LEN)'
+
+     'sys/mman.h' (POSIX.1b): *note Page Lock Functions::.
+
+'int munlockall (void)'
+
+     'sys/mman.h' (POSIX.1b): *note Page Lock Functions::.
+
+'int munmap (void *ADDR, size_t LENGTH)'
+
+     'sys/mman.h' (POSIX): *note Memory-mapped I/O::.
+
+'void muntrace (void)'
+
+     'mcheck.h' (GNU): *note Tracing malloc::.
+
+'int NAME_MAX'
+
+     'limits.h' (POSIX.1): *note Limits for Files::.
+
+'float NAN'
+
+     'math.h' (GNU): *note Infinity and NaN::.
+
+'double nan (const char *TAGP)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'float nanf (const char *TAGP)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'long double nanl (const char *TAGP)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int nanosleep (const struct timespec *REQUESTED_TIME, struct timespec *REMAINING)'
+
+     'time.h' (POSIX.1): *note Sleeping::.
+
+'int NCCS'
+
+     'termios.h' (POSIX.1): *note Mode Data Types::.
+
+'double nearbyint (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'float nearbyintf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double nearbyintl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'NEW_TIME'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'NEW_TIME'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'double nextafter (double X, double Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'float nextafterf (float X, float Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'long double nextafterl (long double X, long double Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'double nextdown (double X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'float nextdownf (float X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'long double nextdownl (long double X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'double nexttoward (double X, long double Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'float nexttowardf (float X, long double Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'long double nexttowardl (long double X, long double Y)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'double nextup (double X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'float nextupf (float X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'long double nextupl (long double X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int nftw (const char *FILENAME, __nftw_func_t FUNC, int DESCRIPTORS, int FLAG)'
+
+     'ftw.h' (XPG4.2): *note Working with Directory Trees::.
+
+'int nftw64 (const char *FILENAME, __nftw64_func_t FUNC, int DESCRIPTORS, int FLAG)'
+
+     'ftw.h' (Unix98): *note Working with Directory Trees::.
+
+'__nftw64_func_t'
+
+     'ftw.h' (GNU): *note Working with Directory Trees::.
+
+'__nftw_func_t'
+
+     'ftw.h' (GNU): *note Working with Directory Trees::.
+
+'char * ngettext (const char *MSGID1, const char *MSGID2, unsigned long int N)'
+
+     'libintl.h' (GNU): *note Advanced gettext functions::.
+
+'int NGROUPS_MAX'
+
+     'limits.h' (POSIX.1): *note General Limits::.
+
+'int nice (int INCREMENT)'
+
+     'unistd.h' (BSD): *note Traditional Scheduling Functions::.
+
+'nlink_t'
+
+     'sys/types.h' (POSIX.1): *note Attribute Meanings::.
+
+'char * nl_langinfo (nl_item ITEM)'
+
+     'langinfo.h' (XOPEN): *note The Elegant and Fast Way::.
+
+'NO_ADDRESS'
+
+     'netdb.h' (BSD): *note Host Names::.
+
+'tcflag_t NOFLSH'
+
+     'termios.h' (POSIX.1): *note Local Modes::.
+
+'tcflag_t NOKERNINFO'
+
+     'termios.h',  (optional)’ (BSD): *note Local Modes::.
+
+'NO_RECOVERY'
+
+     'netdb.h' (BSD): *note Host Names::.
+
+'long int nrand48 (unsigned short int XSUBI[3])'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int nrand48_r (unsigned short int XSUBI[3], struct drand48_data *BUFFER, long int *RESULT)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'int NSIG'
+
+     'signal.h' (BSD): *note Standard Signals::.
+
+'uint32_t ntohl (uint32_t NETLONG)'
+
+     'netinet/in.h' (BSD): *note Byte Order::.
+
+'uint16_t ntohs (uint16_t NETSHORT)'
+
+     'netinet/in.h' (BSD): *note Byte Order::.
+
+'int ntp_adjtime (struct timex *TPTR)'
+
+     'sys/timex.h' (GNU): *note High Accuracy Clock::.
+
+'int ntp_gettime (struct ntptimeval *TPTR)'
+
+     'sys/timex.h' (GNU): *note High Accuracy Clock::.
+
+'void * NULL'
+
+     'stddef.h' (ISO): *note Null Pointer Constant::.
+
+'int O_ACCMODE'
+
+     'fcntl.h' (POSIX.1): *note Access Modes::.
+
+'int O_APPEND'
+
+     'fcntl.h' (POSIX.1): *note Operating Modes::.
+
+'int O_ASYNC'
+
+     'fcntl.h' (BSD): *note Operating Modes::.
+
+'void obstack_1grow (struct obstack *OBSTACK-PTR, char C)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_1grow_fast (struct obstack *OBSTACK-PTR, char C)'
+
+     'obstack.h' (GNU): *note Extra Fast Growing::.
+
+'int obstack_alignment_mask (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Obstacks Data Alignment::.
+
+'void * obstack_alloc (struct obstack *OBSTACK-PTR, int SIZE)'
+
+     'obstack.h' (GNU): *note Allocation in an Obstack::.
+
+'obstack_alloc_failed_handler'
+
+     'obstack.h' (GNU): *note Preparing for Obstacks::.
+
+'void * obstack_base (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Status of an Obstack::.
+
+'void obstack_blank (struct obstack *OBSTACK-PTR, int SIZE)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_blank_fast (struct obstack *OBSTACK-PTR, int SIZE)'
+
+     'obstack.h' (GNU): *note Extra Fast Growing::.
+
+'int obstack_chunk_size (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Obstack Chunks::.
+
+'void * obstack_copy (struct obstack *OBSTACK-PTR, void *ADDRESS, int SIZE)'
+
+     'obstack.h' (GNU): *note Allocation in an Obstack::.
+
+'void * obstack_copy0 (struct obstack *OBSTACK-PTR, void *ADDRESS, int SIZE)'
+
+     'obstack.h' (GNU): *note Allocation in an Obstack::.
+
+'void * obstack_finish (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_free (struct obstack *OBSTACK-PTR, void *OBJECT)'
+
+     'obstack.h' (GNU): *note Freeing Obstack Objects::.
+
+'void obstack_grow (struct obstack *OBSTACK-PTR, void *DATA, int SIZE)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_grow0 (struct obstack *OBSTACK-PTR, void *DATA, int SIZE)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'int obstack_init (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Preparing for Obstacks::.
+
+'void obstack_int_grow (struct obstack *OBSTACK-PTR, int DATA)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_int_grow_fast (struct obstack *OBSTACK-PTR, int DATA)'
+
+     'obstack.h' (GNU): *note Extra Fast Growing::.
+
+'void * obstack_next_free (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Status of an Obstack::.
+
+'int obstack_object_size (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'int obstack_object_size (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Status of an Obstack::.
+
+'int obstack_printf (struct obstack *OBSTACK, const char *TEMPLATE, ...)'
+
+     'stdio.h' (GNU): *note Dynamic Output::.
+
+'void obstack_ptr_grow (struct obstack *OBSTACK-PTR, void *DATA)'
+
+     'obstack.h' (GNU): *note Growing Objects::.
+
+'void obstack_ptr_grow_fast (struct obstack *OBSTACK-PTR, void *DATA)'
+
+     'obstack.h' (GNU): *note Extra Fast Growing::.
+
+'int obstack_room (struct obstack *OBSTACK-PTR)'
+
+     'obstack.h' (GNU): *note Extra Fast Growing::.
+
+'int obstack_vprintf (struct obstack *OBSTACK, const char *TEMPLATE, va_list AP)'
+
+     'stdio.h' (GNU): *note Variable Arguments Output::.
+
+'int O_CREAT'
+
+     'fcntl.h' (POSIX.1): *note Open-time Flags::.
+
+'int O_EXCL'
+
+     'fcntl.h' (POSIX.1): *note Open-time Flags::.
+
+'int O_EXEC'
+
+     'fcntl.h',  (optional)’ (GNU): *note Access Modes::.
+
+'int O_EXLOCK'
+
+     'fcntl.h',  (optional)’ (BSD): *note Open-time Flags::.
+
+'off64_t'
+
+     'sys/types.h' (Unix98): *note File Position Primitive::.
+
+'size_t offsetof (TYPE, MEMBER)'
+
+     'stddef.h' (ISO): *note Structure Measurement::.
+
+'off_t'
+
+     'sys/types.h' (POSIX.1): *note File Position Primitive::.
+
+'int O_FSYNC'
+
+     'fcntl.h' (BSD): *note Operating Modes::.
+
+'int O_IGNORE_CTTY'
+
+     'fcntl.h',  (optional)’ (GNU): *note Open-time Flags::.
+
+'OLD_TIME'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'OLD_TIME'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'int O_NDELAY'
+
+     'fcntl.h' (BSD): *note Operating Modes::.
+
+'int on_exit (void (*FUNCTION)(int STATUS, void *ARG), void *ARG)'
+
+     'stdlib.h' (SunOS): *note Cleanups on Exit::.
+
+'tcflag_t ONLCR'
+
+     'termios.h' (POSIX.1): *note Output Modes::.
+
+'int O_NOATIME'
+
+     'fcntl.h' (GNU): *note Operating Modes::.
+
+'int O_NOCTTY'
+
+     'fcntl.h' (POSIX.1): *note Open-time Flags::.
+
+'tcflag_t ONOEOT'
+
+     'termios.h',  (optional)’ (BSD): *note Output Modes::.
+
+'int O_NOLINK'
+
+     'fcntl.h',  (optional)’ (GNU): *note Open-time Flags::.
+
+'int O_NONBLOCK'
+
+     'fcntl.h' (POSIX.1): *note Open-time Flags::.
+
+'int O_NONBLOCK'
+
+     'fcntl.h' (POSIX.1): *note Operating Modes::.
+
+'int O_NOTRANS'
+
+     'fcntl.h',  (optional)’ (GNU): *note Open-time Flags::.
+
+'int open (const char *FILENAME, int FLAGS[, mode_t MODE])'
+
+     'fcntl.h' (POSIX.1): *note Opening and Closing Files::.
+
+'int open64 (const char *FILENAME, int FLAGS[, mode_t MODE])'
+
+     'fcntl.h' (Unix98): *note Opening and Closing Files::.
+
+'DIR * opendir (const char *DIRNAME)'
+
+     'dirent.h' (POSIX.1): *note Opening a Directory::.
+
+'void openlog (const char *IDENT, int OPTION, int FACILITY)'
+
+     'syslog.h' (BSD): *note openlog::.
+
+'int OPEN_MAX'
+
+     'limits.h' (POSIX.1): *note General Limits::.
+
+'FILE * open_memstream (char **PTR, size_t *SIZELOC)'
+
+     'stdio.h' (GNU): *note String Streams::.
+
+'int openpty (int *AMASTER, int *ASLAVE, char *NAME, const struct termios *TERMP, const struct winsize *WINP)'
+
+     'pty.h' (BSD): *note Pseudo-Terminal Pairs::.
+
+'tcflag_t OPOST'
+
+     'termios.h' (POSIX.1): *note Output Modes::.
+
+'char * optarg'
+
+     'unistd.h' (POSIX.2): *note Using Getopt::.
+
+'int opterr'
+
+     'unistd.h' (POSIX.2): *note Using Getopt::.
+
+'int optind'
+
+     'unistd.h' (POSIX.2): *note Using Getopt::.
+
+'OPTION_ALIAS'
+
+     'argp.h' (GNU): *note Argp Option Flags::.
+
+'OPTION_ARG_OPTIONAL'
+
+     'argp.h' (GNU): *note Argp Option Flags::.
+
+'OPTION_DOC'
+
+     'argp.h' (GNU): *note Argp Option Flags::.
+
+'OPTION_HIDDEN'
+
+     'argp.h' (GNU): *note Argp Option Flags::.
+
+'OPTION_NO_USAGE'
+
+     'argp.h' (GNU): *note Argp Option Flags::.
+
+'int optopt'
+
+     'unistd.h' (POSIX.2): *note Using Getopt::.
+
+'int O_RDONLY'
+
+     'fcntl.h' (POSIX.1): *note Access Modes::.
+
+'int O_RDWR'
+
+     'fcntl.h' (POSIX.1): *note Access Modes::.
+
+'int O_READ'
+
+     'fcntl.h',  (optional)’ (GNU): *note Access Modes::.
+
+'int O_SHLOCK'
+
+     'fcntl.h',  (optional)’ (BSD): *note Open-time Flags::.
+
+'int O_SYNC'
+
+     'fcntl.h' (BSD): *note Operating Modes::.
+
+'int O_TRUNC'
+
+     'fcntl.h' (POSIX.1): *note Open-time Flags::.
+
+'int O_WRITE'
+
+     'fcntl.h',  (optional)’ (GNU): *note Access Modes::.
+
+'int O_WRONLY'
+
+     'fcntl.h' (POSIX.1): *note Access Modes::.
+
+'tcflag_t OXTABS'
+
+     'termios.h',  (optional)’ (BSD): *note Output Modes::.
+
+'PA_CHAR'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_DOUBLE'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLAG_LONG'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLAG_LONG_DOUBLE'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLAG_LONG_LONG'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'int PA_FLAG_MASK'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLAG_PTR'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLAG_SHORT'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_FLOAT'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_INT'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_LAST'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_POINTER'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'tcflag_t PARENB'
+
+     'termios.h' (POSIX.1): *note Control Modes::.
+
+'tcflag_t PARMRK'
+
+     'termios.h' (POSIX.1): *note Input Modes::.
+
+'tcflag_t PARODD'
+
+     'termios.h' (POSIX.1): *note Control Modes::.
+
+'size_t parse_printf_format (const char *TEMPLATE, size_t N, int *ARGTYPES)'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'PA_STRING'
+
+     'printf.h' (GNU): *note Parsing a Template String::.
+
+'long int pathconf (const char *FILENAME, int PARAMETER)'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'int PATH_MAX'
+
+     'limits.h' (POSIX.1): *note Limits for Files::.
+
+'int pause (void)'
+
+     'unistd.h' (POSIX.1): *note Using Pause::.
+
+'_PC_ASYNC_IO'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_CHOWN_RESTRICTED'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_FILESIZEBITS'
+
+     'unistd.h' (LFS): *note Pathconf::.
+
+'_PC_LINK_MAX'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'int pclose (FILE *STREAM)'
+
+     'stdio.h' (POSIX.2, SVID, BSD): *note Pipe to a Subprocess::.
+
+'_PC_MAX_CANON'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_MAX_INPUT'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_NAME_MAX'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_NO_TRUNC'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_PATH_MAX'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_PIPE_BUF'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_PRIO_IO'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_REC_INCR_XFER_SIZE'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_REC_MAX_XFER_SIZE'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_REC_MIN_XFER_SIZE'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_REC_XFER_ALIGN'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_SYNC_IO'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'_PC_VDISABLE'
+
+     'unistd.h' (POSIX.1): *note Pathconf::.
+
+'tcflag_t PENDIN'
+
+     'termios.h' (BSD): *note Local Modes::.
+
+'void perror (const char *MESSAGE)'
+
+     'stdio.h' (ISO): *note Error Messages::.
+
+'int PF_FILE'
+
+     'sys/socket.h' (GNU): *note Local Namespace Details::.
+
+'int PF_INET'
+
+     'sys/socket.h' (BSD): *note Internet Namespace::.
+
+'int PF_INET6'
+
+     'sys/socket.h' (X/Open): *note Internet Namespace::.
+
+'int PF_LOCAL'
+
+     'sys/socket.h' (POSIX): *note Local Namespace Details::.
+
+'int PF_UNIX'
+
+     'sys/socket.h' (BSD): *note Local Namespace Details::.
+
+'pid_t'
+
+     'sys/types.h' (POSIX.1): *note Process Identification::.
+
+'int pipe (int FILEDES[2])'
+
+     'unistd.h' (POSIX.1): *note Creating a Pipe::.
+
+'int PIPE_BUF'
+
+     'limits.h' (POSIX.1): *note Limits for Files::.
+
+'FILE * popen (const char *COMMAND, const char *MODE)'
+
+     'stdio.h' (POSIX.2, SVID, BSD): *note Pipe to a Subprocess::.
+
+'_POSIX2_BC_BASE_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'_POSIX2_BC_DIM_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'_POSIX2_BC_SCALE_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'_POSIX2_BC_STRING_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'int _POSIX2_C_DEV'
+
+     'unistd.h' (POSIX.2): *note System Options::.
+
+'_POSIX2_COLL_WEIGHTS_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'long int _POSIX2_C_VERSION'
+
+     'unistd.h' (POSIX.2): *note Version Supported::.
+
+'_POSIX2_EQUIV_CLASS_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'_POSIX2_EXPR_NEST_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'int _POSIX2_FORT_DEV'
+
+     'unistd.h' (POSIX.2): *note System Options::.
+
+'int _POSIX2_FORT_RUN'
+
+     'unistd.h' (POSIX.2): *note System Options::.
+
+'_POSIX2_LINE_MAX'
+
+     'limits.h' (POSIX.2): *note Utility Minimums::.
+
+'int _POSIX2_LOCALEDEF'
+
+     'unistd.h' (POSIX.2): *note System Options::.
+
+'_POSIX2_RE_DUP_MAX'
+
+     'limits.h' (POSIX.2): *note Minimums::.
+
+'int _POSIX2_SW_DEV'
+
+     'unistd.h' (POSIX.2): *note System Options::.
+
+'_POSIX_AIO_LISTIO_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_AIO_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_ARG_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_CHILD_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'int _POSIX_CHOWN_RESTRICTED'
+
+     'unistd.h' (POSIX.1): *note Options for Files::.
+
+'_POSIX_C_SOURCE'
+
+     (POSIX.2): *note Feature Test Macros::.
+
+'int _POSIX_JOB_CONTROL'
+
+     'unistd.h' (POSIX.1): *note System Options::.
+
+'_POSIX_LINK_MAX'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'_POSIX_MAX_CANON'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'_POSIX_MAX_INPUT'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'int posix_memalign (void **MEMPTR, size_t ALIGNMENT, size_t SIZE)'
+
+     'stdlib.h' (POSIX): *note Aligned Memory Blocks::.
+
+'_POSIX_NAME_MAX'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'_POSIX_NGROUPS_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'int _POSIX_NO_TRUNC'
+
+     'unistd.h' (POSIX.1): *note Options for Files::.
+
+'_POSIX_OPEN_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_PATH_MAX'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'_POSIX_PIPE_BUF'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'POSIX_REC_INCR_XFER_SIZE'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'POSIX_REC_MAX_XFER_SIZE'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'POSIX_REC_MIN_XFER_SIZE'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'POSIX_REC_XFER_ALIGN'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'int _POSIX_SAVED_IDS'
+
+     'unistd.h' (POSIX.1): *note System Options::.
+
+'_POSIX_SOURCE'
+
+     (POSIX.1): *note Feature Test Macros::.
+
+'_POSIX_SSIZE_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_STREAM_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'_POSIX_TZNAME_MAX'
+
+     'limits.h' (POSIX.1): *note Minimums::.
+
+'unsigned char _POSIX_VDISABLE'
+
+     'unistd.h' (POSIX.1): *note Options for Files::.
+
+'long int _POSIX_VERSION'
+
+     'unistd.h' (POSIX.1): *note Version Supported::.
+
+'double pow (double BASE, double POWER)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'double pow10 (double X)'
+
+     'math.h' (GNU): *note Exponents and Logarithms::.
+
+'float pow10f (float X)'
+
+     'math.h' (GNU): *note Exponents and Logarithms::.
+
+'long double pow10l (long double X)'
+
+     'math.h' (GNU): *note Exponents and Logarithms::.
+
+'float powf (float BASE, float POWER)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double powl (long double BASE, long double POWER)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'ssize_t pread (int FILEDES, void *BUFFER, size_t SIZE, off_t OFFSET)'
+
+     'unistd.h' (Unix98): *note I/O Primitives::.
+
+'ssize_t pread64 (int FILEDES, void *BUFFER, size_t SIZE, off64_t OFFSET)'
+
+     'unistd.h' (Unix98): *note I/O Primitives::.
+
+'int printf (const char *TEMPLATE, ...)'
+
+     'stdio.h' (ISO): *note Formatted Output Functions::.
+
+'printf_arginfo_function'
+
+     'printf.h' (GNU): *note Defining the Output Handler::.
+
+'printf_function'
+
+     'printf.h' (GNU): *note Defining the Output Handler::.
+
+'int printf_size (FILE *FP, const struct printf_info *INFO, const void *const *ARGS)'
+
+     'printf.h' (GNU): *note Predefined Printf Handlers::.
+
+'int printf_size_info (const struct printf_info *INFO, size_t N, int *ARGTYPES)'
+
+     'printf.h' (GNU): *note Predefined Printf Handlers::.
+
+'PRIO_MAX'
+
+     'sys/resource.h' (BSD): *note Traditional Scheduling Functions::.
+
+'PRIO_MIN'
+
+     'sys/resource.h' (BSD): *note Traditional Scheduling Functions::.
+
+'PRIO_PGRP'
+
+     'sys/resource.h' (BSD): *note Traditional Scheduling Functions::.
+
+'PRIO_PROCESS'
+
+     'sys/resource.h' (BSD): *note Traditional Scheduling Functions::.
+
+'PRIO_USER'
+
+     'sys/resource.h' (BSD): *note Traditional Scheduling Functions::.
+
+'char * program_invocation_name'
+
+     'errno.h' (GNU): *note Error Messages::.
+
+'char * program_invocation_short_name'
+
+     'errno.h' (GNU): *note Error Messages::.
+
+'void psignal (int SIGNUM, const char *MESSAGE)'
+
+     'signal.h' (BSD): *note Signal Messages::.
+
+'int pthread_getattr_default_np (pthread_attr_t *ATTR)'
+
+     'pthread.h' (GNU): *note Default Thread Attributes::.
+
+'void *pthread_getspecific (pthread_key_t KEY)'
+
+     'pthread.h' (POSIX): *note Thread-specific Data::.
+
+'int pthread_key_create (pthread_key_t KEY, void (DESTRUCTOR)(void*))'
+
+     'pthread.h' (POSIX): *note Thread-specific Data::.
+
+'int pthread_key_delete (pthread_key_t KEY)'
+
+     'pthread.h' (POSIX): *note Thread-specific Data::.
+
+'int pthread_setattr_default_np (pthread_attr_t *ATTR)'
+
+     'pthread.h' (GNU): *note Default Thread Attributes::.
+
+'int pthread_setspecific (pthread_key_t KEY, const void *VALUE)'
+
+     'pthread.h' (POSIX): *note Thread-specific Data::.
+
+'char * P_tmpdir'
+
+     'stdio.h' (SVID): *note Temporary Files::.
+
+'ptrdiff_t'
+
+     'stddef.h' (ISO): *note Important Data Types::.
+
+'PTRDIFF_WIDTH'
+
+     'stdint.h' (ISO): *note Width of Type::.
+
+'char * ptsname (int FILEDES)'
+
+     'stdlib.h' (SVID, XPG4.2): *note Allocation::.
+
+'int ptsname_r (int FILEDES, char *BUF, size_t LEN)'
+
+     'stdlib.h' (GNU): *note Allocation::.
+
+'int putc (int C, FILE *STREAM)'
+
+     'stdio.h' (ISO): *note Simple Output::.
+
+'int putchar (int C)'
+
+     'stdio.h' (ISO): *note Simple Output::.
+
+'int putchar_unlocked (int C)'
+
+     'stdio.h' (POSIX): *note Simple Output::.
+
+'int putc_unlocked (int C, FILE *STREAM)'
+
+     'stdio.h' (POSIX): *note Simple Output::.
+
+'int putenv (char *STRING)'
+
+     'stdlib.h' (SVID): *note Environment Access::.
+
+'int putpwent (const struct passwd *P, FILE *STREAM)'
+
+     'pwd.h' (SVID): *note Writing a User Entry::.
+
+'int puts (const char *S)'
+
+     'stdio.h' (ISO): *note Simple Output::.
+
+'struct utmp * pututline (const struct utmp *UTMP)'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'struct utmpx * pututxline (const struct utmpx *UTMP)'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'int putw (int W, FILE *STREAM)'
+
+     'stdio.h' (SVID): *note Simple Output::.
+
+'wint_t putwc (wchar_t WC, FILE *STREAM)'
+
+     'wchar.h' (ISO): *note Simple Output::.
+
+'wint_t putwchar (wchar_t WC)'
+
+     'wchar.h' (ISO): *note Simple Output::.
+
+'wint_t putwchar_unlocked (wchar_t WC)'
+
+     'wchar.h' (GNU): *note Simple Output::.
+
+'wint_t putwc_unlocked (wchar_t WC, FILE *STREAM)'
+
+     'wchar.h' (GNU): *note Simple Output::.
+
+'ssize_t pwrite (int FILEDES, const void *BUFFER, size_t SIZE, off_t OFFSET)'
+
+     'unistd.h' (Unix98): *note I/O Primitives::.
+
+'ssize_t pwrite64 (int FILEDES, const void *BUFFER, size_t SIZE, off64_t OFFSET)'
+
+     'unistd.h' (Unix98): *note I/O Primitives::.
+
+'char * qecvt (long double VALUE, int NDIGIT, int *DECPT, int *NEG)'
+
+     'stdlib.h' (GNU): *note System V Number Conversion::.
+
+'int qecvt_r (long double VALUE, int NDIGIT, int *DECPT, int *NEG, char *BUF, size_t LEN)'
+
+     'stdlib.h' (GNU): *note System V Number Conversion::.
+
+'char * qfcvt (long double VALUE, int NDIGIT, int *DECPT, int *NEG)'
+
+     'stdlib.h' (GNU): *note System V Number Conversion::.
+
+'int qfcvt_r (long double VALUE, int NDIGIT, int *DECPT, int *NEG, char *BUF, size_t LEN)'
+
+     'stdlib.h' (GNU): *note System V Number Conversion::.
+
+'char * qgcvt (long double VALUE, int NDIGIT, char *BUF)'
+
+     'stdlib.h' (GNU): *note System V Number Conversion::.
+
+'void qsort (void *ARRAY, size_t COUNT, size_t SIZE, comparison_fn_t COMPARE)'
+
+     'stdlib.h' (ISO): *note Array Sort Function::.
+
+'int raise (int SIGNUM)'
+
+     'signal.h' (ISO): *note Signaling Yourself::.
+
+'int rand (void)'
+
+     'stdlib.h' (ISO): *note ISO Random::.
+
+'int RAND_MAX'
+
+     'stdlib.h' (ISO): *note ISO Random::.
+
+'long int random (void)'
+
+     'stdlib.h' (BSD): *note BSD Random::.
+
+'int random_r (struct random_data *restrict BUF, int32_t *restrict RESULT)'
+
+     'stdlib.h' (GNU): *note BSD Random::.
+
+'int rand_r (unsigned int *SEED)'
+
+     'stdlib.h' (POSIX.1): *note ISO Random::.
+
+'void * rawmemchr (const void *BLOCK, int C)'
+
+     'string.h' (GNU): *note Search Functions::.
+
+'ssize_t read (int FILEDES, void *BUFFER, size_t SIZE)'
+
+     'unistd.h' (POSIX.1): *note I/O Primitives::.
+
+'struct dirent * readdir (DIR *DIRSTREAM)'
+
+     'dirent.h' (POSIX.1): *note Reading/Closing Directory::.
+
+'struct dirent64 * readdir64 (DIR *DIRSTREAM)'
+
+     'dirent.h' (LFS): *note Reading/Closing Directory::.
+
+'int readdir64_r (DIR *DIRSTREAM, struct dirent64 *ENTRY, struct dirent64 **RESULT)'
+
+     'dirent.h' (LFS): *note Reading/Closing Directory::.
+
+'int readdir_r (DIR *DIRSTREAM, struct dirent *ENTRY, struct dirent **RESULT)'
+
+     'dirent.h' (GNU): *note Reading/Closing Directory::.
+
+'ssize_t readlink (const char *FILENAME, char *BUFFER, size_t SIZE)'
+
+     'unistd.h' (BSD): *note Symbolic Links::.
+
+'ssize_t readv (int FILEDES, const struct iovec *VECTOR, int COUNT)'
+
+     'sys/uio.h' (BSD): *note Scatter-Gather::.
+
+'void * realloc (void *PTR, size_t NEWSIZE)'
+
+     'malloc.h',  stdlib.h’ (ISO): *note Changing Block Size::.
+
+'__realloc_hook'
+
+     'malloc.h' (GNU): *note Hooks for Malloc::.
+
+'char * realpath (const char *restrict NAME, char *restrict RESOLVED)'
+
+     'stdlib.h' (XPG): *note Symbolic Links::.
+
+'ssize_t recv (int SOCKET, void *BUFFER, size_t SIZE, int FLAGS)'
+
+     'sys/socket.h' (BSD): *note Receiving Data::.
+
+'ssize_t recvfrom (int SOCKET, void *BUFFER, size_t SIZE, int FLAGS, struct sockaddr *ADDR, socklen_t *LENGTH-PTR)'
+
+     'sys/socket.h' (BSD): *note Receiving Datagrams::.
+
+'ssize_t recvmsg (int SOCKET, struct msghdr *MESSAGE, int FLAGS)'
+
+     'sys/socket.h' (BSD): *note Receiving Datagrams::.
+
+'int RE_DUP_MAX'
+
+     'limits.h' (POSIX.2): *note General Limits::.
+
+'_REENTRANT'
+
+     (GNU): *note Feature Test Macros::.
+
+'REG_BADBR'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_BADPAT'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_BADRPT'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'int regcomp (regex_t *restrict COMPILED, const char *restrict PATTERN, int CFLAGS)'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_EBRACE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_EBRACK'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_ECOLLATE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_ECTYPE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_EESCAPE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_EPAREN'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_ERANGE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'size_t regerror (int ERRCODE, const regex_t *restrict COMPILED, char *restrict BUFFER, size_t LENGTH)'
+
+     'regex.h' (POSIX.2): *note Regexp Cleanup::.
+
+'REG_ESPACE'
+
+     'regex.h' (POSIX.2): *note Matching POSIX Regexps::.
+
+'REG_ESPACE'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_ESUBREG'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'int regexec (const regex_t *restrict COMPILED, const char *restrict STRING, size_t NMATCH, regmatch_t MATCHPTR[restrict], int EFLAGS)'
+
+     'regex.h' (POSIX.2): *note Matching POSIX Regexps::.
+
+'regex_t'
+
+     'regex.h' (POSIX.2): *note POSIX Regexp Compilation::.
+
+'REG_EXTENDED'
+
+     'regex.h' (POSIX.2): *note Flags for POSIX Regexps::.
+
+'void regfree (regex_t *COMPILED)'
+
+     'regex.h' (POSIX.2): *note Regexp Cleanup::.
+
+'REG_ICASE'
+
+     'regex.h' (POSIX.2): *note Flags for POSIX Regexps::.
+
+'int register_printf_function (int SPEC, printf_function HANDLER-FUNCTION, printf_arginfo_function ARGINFO-FUNCTION)'
+
+     'printf.h' (GNU): *note Registering New Conversions::.
+
+'regmatch_t'
+
+     'regex.h' (POSIX.2): *note Regexp Subexpressions::.
+
+'REG_NEWLINE'
+
+     'regex.h' (POSIX.2): *note Flags for POSIX Regexps::.
+
+'REG_NOMATCH'
+
+     'regex.h' (POSIX.2): *note Matching POSIX Regexps::.
+
+'REG_NOSUB'
+
+     'regex.h' (POSIX.2): *note Flags for POSIX Regexps::.
+
+'REG_NOTBOL'
+
+     'regex.h' (POSIX.2): *note Matching POSIX Regexps::.
+
+'REG_NOTEOL'
+
+     'regex.h' (POSIX.2): *note Matching POSIX Regexps::.
+
+'regoff_t'
+
+     'regex.h' (POSIX.2): *note Regexp Subexpressions::.
+
+'double remainder (double NUMERATOR, double DENOMINATOR)'
+
+     'math.h' (BSD): *note Remainder Functions::.
+
+'float remainderf (float NUMERATOR, float DENOMINATOR)'
+
+     'math.h' (BSD): *note Remainder Functions::.
+
+'long double remainderl (long double NUMERATOR, long double DENOMINATOR)'
+
+     'math.h' (BSD): *note Remainder Functions::.
+
+'int remove (const char *FILENAME)'
+
+     'stdio.h' (ISO): *note Deleting Files::.
+
+'int rename (const char *OLDNAME, const char *NEWNAME)'
+
+     'stdio.h' (ISO): *note Renaming Files::.
+
+'void rewind (FILE *STREAM)'
+
+     'stdio.h' (ISO): *note File Positioning::.
+
+'void rewinddir (DIR *DIRSTREAM)'
+
+     'dirent.h' (POSIX.1): *note Random Access Directory::.
+
+'char * rindex (const char *STRING, int C)'
+
+     'string.h' (BSD): *note Search Functions::.
+
+'double rint (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'float rintf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double rintl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'rlim_t RLIM_INFINITY'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_AS'
+
+     'sys/resource.h' (Unix98): *note Limits on Resources::.
+
+'RLIMIT_CORE'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_CPU'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_DATA'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_FSIZE'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_MEMLOCK'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_NOFILE'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_NPROC'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_RSS'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIMIT_STACK'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'RLIM_NLIMITS'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'int rmdir (const char *FILENAME)'
+
+     'unistd.h' (POSIX.1): *note Deleting Files::.
+
+'int R_OK'
+
+     'unistd.h' (POSIX.1): *note Testing File Access::.
+
+'double round (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'double roundeven (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'float roundevenf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double roundevenl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'float roundf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double roundl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'int rpmatch (const char *RESPONSE)'
+
+     'stdlib.h' (stdlib.h): *note Yes-or-No Questions::.
+
+'RUN_LVL'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'RUN_LVL'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'RUSAGE_CHILDREN'
+
+     'sys/resource.h' (BSD): *note Resource Usage::.
+
+'RUSAGE_SELF'
+
+     'sys/resource.h' (BSD): *note Resource Usage::.
+
+'int SA_NOCLDSTOP'
+
+     'signal.h' (POSIX.1): *note Flags for Sigaction::.
+
+'int SA_ONSTACK'
+
+     'signal.h' (BSD): *note Flags for Sigaction::.
+
+'int SA_RESTART'
+
+     'signal.h' (BSD): *note Flags for Sigaction::.
+
+'void *sbrk (ptrdiff_t DELTA)'
+
+     'unistd.h' (BSD): *note Resizing the Data Segment::.
+
+'_SC_2_C_DEV'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_2_FORT_DEV'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_2_FORT_RUN'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_2_LOCALEDEF'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_2_SW_DEV'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_2_VERSION'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_AIO_LISTIO_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_AIO_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_AIO_PRIO_DELTA_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'double scalb (double VALUE, double EXPONENT)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'float scalbf (float VALUE, float EXPONENT)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'long double scalbl (long double VALUE, long double EXPONENT)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'double scalbln (double X, long int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'float scalblnf (float X, long int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'long double scalblnl (long double X, long int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'double scalbn (double X, int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'float scalbnf (float X, int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'long double scalbnl (long double X, int N)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'int scandir (const char *DIR, struct dirent ***NAMELIST, int (*SELECTOR) (const struct dirent *), int (*CMP) (const struct dirent **, const struct dirent **))'
+
+     'dirent.h' (BSD/SVID): *note Scanning Directory Content::.
+
+'int scandir64 (const char *DIR, struct dirent64 ***NAMELIST, int (*SELECTOR) (const struct dirent64 *), int (*CMP) (const struct dirent64 **, const struct dirent64 **))'
+
+     'dirent.h' (GNU): *note Scanning Directory Content::.
+
+'int scanf (const char *TEMPLATE, ...)'
+
+     'stdio.h' (ISO): *note Formatted Input Functions::.
+
+'_SC_ARG_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_ASYNCHRONOUS_IO'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_ATEXIT_MAX'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_AVPHYS_PAGES'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_BC_BASE_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_BC_DIM_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_BC_SCALE_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_BC_STRING_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_CHAR_BIT'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_CHARCLASS_NAME_MAX'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_CHAR_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_CHAR_MIN'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_CHILD_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_CLK_TCK'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_COLL_WEIGHTS_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_DELAYTIMER_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_EQUIV_CLASS_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_EXPR_NEST_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_FSYNC'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_GETGR_R_SIZE_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_GETPW_R_SIZE_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'SCHAR_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'SCHAR_MIN'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'SCHAR_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'int sched_getaffinity (pid_t PID, size_t CPUSETSIZE, cpu_set_t *CPUSET)'
+
+     'sched.h' (GNU): *note CPU Affinity::.
+
+'int sched_getparam (pid_t PID, struct sched_param *PARAM)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_get_priority_max (int POLICY)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_get_priority_min (int POLICY)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_getscheduler (pid_t PID)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_rr_get_interval (pid_t PID, struct timespec *INTERVAL)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_setaffinity (pid_t PID, size_t CPUSETSIZE, const cpu_set_t *CPUSET)'
+
+     'sched.h' (GNU): *note CPU Affinity::.
+
+'int sched_setparam (pid_t PID, const struct sched_param *PARAM)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_setscheduler (pid_t PID, int POLICY, const struct sched_param *PARAM)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'int sched_yield (void)'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'_SC_INT_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_INT_MIN'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_JOB_CONTROL'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_LINE_MAX'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_LOGIN_NAME_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_LONG_BIT'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_MAPPED_FILES'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MB_LEN_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_MEMLOCK'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MEMLOCK_RANGE'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MEMORY_PROTECTION'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MESSAGE_PASSING'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MQ_OPEN_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_MQ_PRIO_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_NGROUPS_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_NL_ARGMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NL_LANGMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NL_MSGMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NL_NMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NL_SETMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NL_TEXTMAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_NPROCESSORS_CONF'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_NPROCESSORS_ONLN'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_NZERO'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_OPEN_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_PAGESIZE'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_PHYS_PAGES'
+
+     'unistd.h' (GNU): *note Constants for Sysconf::.
+
+'_SC_PII'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_INTERNET'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_INTERNET_DGRAM'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_INTERNET_STREAM'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_OSI'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_OSI_CLTS'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_OSI_COTS'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_OSI_M'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_SOCKET'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PII_XTI'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_PRIORITIZED_IO'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_PRIORITY_SCHEDULING'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_REALTIME_SIGNALS'
+
+     'unistdh.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_RTSIG_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SAVED_IDS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SCHAR_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_SCHAR_MIN'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_SELECT'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_SEMAPHORES'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SEM_NSEMS_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SEM_VALUE_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SHARED_MEMORY_OBJECTS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SHRT_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_SHRT_MIN'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_SIGQUEUE_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'SC_SSIZE_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_STREAM_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_SYNCHRONIZED_IO'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_ATTR_STACKADDR'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_ATTR_STACKSIZE'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_DESTRUCTOR_ITERATIONS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_KEYS_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_PRIO_INHERIT'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_PRIO_PROTECT'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_PRIORITY_SCHEDULING'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_PROCESS_SHARED'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREADS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_SAFE_FUNCTIONS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_STACK_MIN'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_THREAD_THREADS_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_TIMER_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_TIMERS'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_T_IOV_MAX'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_TTY_NAME_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_TZNAME_MAX'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_UCHAR_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_UINT_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_UIO_MAXIOV'
+
+     'unistd.h' (POSIX.1g): *note Constants for Sysconf::.
+
+'_SC_ULONG_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_USHRT_MAX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_VERSION'
+
+     'unistd.h' (POSIX.1): *note Constants for Sysconf::.
+
+'_SC_VERSION'
+
+     'unistd.h' (POSIX.2): *note Constants for Sysconf::.
+
+'_SC_WORD_BIT'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_CRYPT'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_ENH_I18N'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_LEGACY'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_REALTIME'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_REALTIME_THREADS'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_SHM'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_UNIX'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_VERSION'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_XCU_VERSION'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_XPG2'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_XPG3'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'_SC_XOPEN_XPG4'
+
+     'unistd.h' (X/Open): *note Constants for Sysconf::.
+
+'char * secure_getenv (const char *NAME)'
+
+     'stdlib.h' (GNU): *note Environment Access::.
+
+'unsigned short int * seed48 (unsigned short int SEED16V[3])'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int seed48_r (unsigned short int SEED16V[3], struct drand48_data *BUFFER)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'int SEEK_CUR'
+
+     'stdio.h' (ISO): *note File Positioning::.
+
+'void seekdir (DIR *DIRSTREAM, long int POS)'
+
+     'dirent.h' (BSD): *note Random Access Directory::.
+
+'int SEEK_END'
+
+     'stdio.h' (ISO): *note File Positioning::.
+
+'int SEEK_SET'
+
+     'stdio.h' (ISO): *note File Positioning::.
+
+'int select (int NFDS, fd_set *READ-FDS, fd_set *WRITE-FDS, fd_set *EXCEPT-FDS, struct timeval *TIMEOUT)'
+
+     'sys/types.h' (BSD): *note Waiting for I/O::.
+
+'ssize_t send (int SOCKET, const void *BUFFER, size_t SIZE, int FLAGS)'
+
+     'sys/socket.h' (BSD): *note Sending Data::.
+
+'ssize_t sendmsg (int SOCKET, const struct msghdr *MESSAGE, int FLAGS)'
+
+     'sys/socket.h' (BSD): *note Receiving Datagrams::.
+
+'ssize_t sendto (int SOCKET, const void *BUFFER, size_t SIZE, int FLAGS, struct sockaddr *ADDR, socklen_t LENGTH)'
+
+     'sys/socket.h' (BSD): *note Sending Datagrams::.
+
+'void setbuf (FILE *STREAM, char *BUF)'
+
+     'stdio.h' (ISO): *note Controlling Buffering::.
+
+'void setbuffer (FILE *STREAM, char *BUF, size_t SIZE)'
+
+     'stdio.h' (BSD): *note Controlling Buffering::.
+
+'int setcontext (const ucontext_t *UCP)'
+
+     'ucontext.h' (SVID): *note System V contexts::.
+
+'int setdomainname (const char *NAME, size_t LENGTH)'
+
+     'unistd.h' (???): *note Host Identification::.
+
+'int setegid (gid_t NEWGID)'
+
+     'unistd.h' (POSIX.1): *note Setting Groups::.
+
+'int setenv (const char *NAME, const char *VALUE, int REPLACE)'
+
+     'stdlib.h' (BSD): *note Environment Access::.
+
+'int seteuid (uid_t NEWEUID)'
+
+     'unistd.h' (POSIX.1): *note Setting User ID::.
+
+'int setfsent (void)'
+
+     'fstab.h' (BSD): *note fstab::.
+
+'int setgid (gid_t NEWGID)'
+
+     'unistd.h' (POSIX.1): *note Setting Groups::.
+
+'void setgrent (void)'
+
+     'grp.h' (SVID, BSD): *note Scanning All Groups::.
+
+'int setgroups (size_t COUNT, const gid_t *GROUPS)'
+
+     'grp.h' (BSD): *note Setting Groups::.
+
+'void sethostent (int STAYOPEN)'
+
+     'netdb.h' (BSD): *note Host Names::.
+
+'int sethostid (long int ID)'
+
+     'unistd.h' (BSD): *note Host Identification::.
+
+'int sethostname (const char *NAME, size_t LENGTH)'
+
+     'unistd.h' (BSD): *note Host Identification::.
+
+'int setitimer (int WHICH, const struct itimerval *NEW, struct itimerval *OLD)'
+
+     'sys/time.h' (BSD): *note Setting an Alarm::.
+
+'int setjmp (jmp_buf STATE)'
+
+     'setjmp.h' (ISO): *note Non-Local Details::.
+
+'void setkey (const char *KEY)'
+
+     'crypt.h' (BSD, SVID): *note DES Encryption::.
+
+'void setkey_r (const char *KEY, struct crypt_data * DATA)'
+
+     'crypt.h' (GNU): *note DES Encryption::.
+
+'void setlinebuf (FILE *STREAM)'
+
+     'stdio.h' (BSD): *note Controlling Buffering::.
+
+'char * setlocale (int CATEGORY, const char *LOCALE)'
+
+     'locale.h' (ISO): *note Setting the Locale::.
+
+'int setlogmask (int MASK)'
+
+     'syslog.h' (BSD): *note setlogmask::.
+
+'FILE * setmntent (const char *FILE, const char *MODE)'
+
+     'mntent.h' (BSD): *note mtab::.
+
+'void setnetent (int STAYOPEN)'
+
+     'netdb.h' (BSD): *note Networks Database::.
+
+'int setnetgrent (const char *NETGROUP)'
+
+     'netdb.h' (BSD): *note Lookup Netgroup::.
+
+'int setpayload (double *X, double PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpayloadf (float *X, float PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpayloadl (long double *X, long double PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpayloadsig (double *X, double PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpayloadsigf (float *X, float PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpayloadsigl (long double *X, long double PAYLOAD)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'int setpgid (pid_t PID, pid_t PGID)'
+
+     'unistd.h' (POSIX.1): *note Process Group Functions::.
+
+'int setpgrp (pid_t PID, pid_t PGID)'
+
+     'unistd.h' (BSD): *note Process Group Functions::.
+
+'int setpriority (int CLASS, int ID, int NICEVAL)'
+
+     'sys/resource.h' (BSD,POSIX): *note Traditional Scheduling
+     Functions::.
+
+'void setprotoent (int STAYOPEN)'
+
+     'netdb.h' (BSD): *note Protocols Database::.
+
+'void setpwent (void)'
+
+     'pwd.h' (SVID, BSD): *note Scanning All Users::.
+
+'int setregid (gid_t RGID, gid_t EGID)'
+
+     'unistd.h' (BSD): *note Setting Groups::.
+
+'int setreuid (uid_t RUID, uid_t EUID)'
+
+     'unistd.h' (BSD): *note Setting User ID::.
+
+'int setrlimit (int RESOURCE, const struct rlimit *RLP)'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'int setrlimit64 (int RESOURCE, const struct rlimit64 *RLP)'
+
+     'sys/resource.h' (Unix98): *note Limits on Resources::.
+
+'void setservent (int STAYOPEN)'
+
+     'netdb.h' (BSD): *note Services Database::.
+
+'pid_t setsid (void)'
+
+     'unistd.h' (POSIX.1): *note Process Group Functions::.
+
+'int setsockopt (int SOCKET, int LEVEL, int OPTNAME, const void *OPTVAL, socklen_t OPTLEN)'
+
+     'sys/socket.h' (BSD): *note Socket Option Functions::.
+
+'char * setstate (char *STATE)'
+
+     'stdlib.h' (BSD): *note BSD Random::.
+
+'int setstate_r (char *restrict STATEBUF, struct random_data *restrict BUF)'
+
+     'stdlib.h' (GNU): *note BSD Random::.
+
+'int settimeofday (const struct timeval *TP, const struct timezone *TZP)'
+
+     'sys/time.h' (BSD): *note High-Resolution Calendar::.
+
+'int setuid (uid_t NEWUID)'
+
+     'unistd.h' (POSIX.1): *note Setting User ID::.
+
+'void setutent (void)'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'void setutxent (void)'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'int setvbuf (FILE *STREAM, char *BUF, int MODE, size_t SIZE)'
+
+     'stdio.h' (ISO): *note Controlling Buffering::.
+
+'int shm_open (const char *NAME, int OFLAG, mode_t MODE)'
+
+     'sys/mman.h' (POSIX): *note Memory-mapped I/O::.
+
+'SHRT_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'SHRT_MIN'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'SHRT_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'int shutdown (int SOCKET, int HOW)'
+
+     'sys/socket.h' (BSD): *note Closing a Socket::.
+
+'S_IEXEC'
+
+     'sys/stat.h' (BSD): *note Permission Bits::.
+
+'S_IFBLK'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFCHR'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFDIR'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFIFO'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFLNK'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'int S_IFMT'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFREG'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'S_IFSOCK'
+
+     'sys/stat.h' (BSD): *note Testing File Type::.
+
+'int SIGABRT'
+
+     'signal.h' (ISO): *note Program Error Signals::.
+
+'int sigaction (int SIGNUM, const struct sigaction *restrict ACTION, struct sigaction *restrict OLD-ACTION)'
+
+     'signal.h' (POSIX.1): *note Advanced Signal Handling::.
+
+'int sigaddset (sigset_t *SET, int SIGNUM)'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'int SIGALRM'
+
+     'signal.h' (POSIX.1): *note Alarm Signals::.
+
+'int sigaltstack (const stack_t *restrict STACK, stack_t *restrict OLDSTACK)'
+
+     'signal.h' (XPG): *note Signal Stack::.
+
+'sig_atomic_t'
+
+     'signal.h' (ISO): *note Atomic Types::.
+
+'SIG_ATOMIC_WIDTH'
+
+     'stdint.h' (ISO): *note Width of Type::.
+
+'SIG_BLOCK'
+
+     'signal.h' (POSIX.1): *note Process Signal Mask::.
+
+'int sigblock (int MASK)'
+
+     'signal.h' (BSD): *note BSD Signal Handling::.
+
+'int SIGBUS'
+
+     'signal.h' (BSD): *note Program Error Signals::.
+
+'int SIGCHLD'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'int SIGCLD'
+
+     'signal.h' (SVID): *note Job Control Signals::.
+
+'int SIGCONT'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'int sigdelset (sigset_t *SET, int SIGNUM)'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'int sigemptyset (sigset_t *SET)'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'int SIGEMT'
+
+     'signal.h' (BSD): *note Program Error Signals::.
+
+'sighandler_t SIG_ERR'
+
+     'signal.h' (ISO): *note Basic Signal Handling::.
+
+'int sigfillset (sigset_t *SET)'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'int SIGFPE'
+
+     'signal.h' (ISO): *note Program Error Signals::.
+
+'sighandler_t'
+
+     'signal.h' (GNU): *note Basic Signal Handling::.
+
+'int SIGHUP'
+
+     'signal.h' (POSIX.1): *note Termination Signals::.
+
+'int SIGILL'
+
+     'signal.h' (ISO): *note Program Error Signals::.
+
+'int SIGINFO'
+
+     'signal.h' (BSD): *note Miscellaneous Signals::.
+
+'int SIGINT'
+
+     'signal.h' (ISO): *note Termination Signals::.
+
+'int siginterrupt (int SIGNUM, int FAILFLAG)'
+
+     'signal.h' (XPG): *note BSD Signal Handling::.
+
+'int SIGIO'
+
+     'signal.h' (BSD): *note Asynchronous I/O Signals::.
+
+'int SIGIOT'
+
+     'signal.h' (Unix): *note Program Error Signals::.
+
+'int sigismember (const sigset_t *SET, int SIGNUM)'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'sigjmp_buf'
+
+     'setjmp.h' (POSIX.1): *note Non-Local Exits and Signals::.
+
+'int SIGKILL'
+
+     'signal.h' (POSIX.1): *note Termination Signals::.
+
+'void siglongjmp (sigjmp_buf STATE, int VALUE)'
+
+     'setjmp.h' (POSIX.1): *note Non-Local Exits and Signals::.
+
+'int SIGLOST'
+
+     'signal.h' (GNU): *note Operation Error Signals::.
+
+'int sigmask (int SIGNUM)'
+
+     'signal.h' (BSD): *note BSD Signal Handling::.
+
+'sighandler_t signal (int SIGNUM, sighandler_t ACTION)'
+
+     'signal.h' (ISO): *note Basic Signal Handling::.
+
+'int signbit (_float-type_ X)'
+
+     'math.h' (ISO): *note FP Bit Twiddling::.
+
+'double significand (double X)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'float significandf (float X)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'long double significandl (long double X)'
+
+     'math.h' (BSD): *note Normalization Functions::.
+
+'int sigpause (int MASK)'
+
+     'signal.h' (BSD): *note BSD Signal Handling::.
+
+'int sigpending (sigset_t *SET)'
+
+     'signal.h' (POSIX.1): *note Checking for Pending Signals::.
+
+'int SIGPIPE'
+
+     'signal.h' (POSIX.1): *note Operation Error Signals::.
+
+'int SIGPOLL'
+
+     'signal.h' (SVID): *note Asynchronous I/O Signals::.
+
+'int sigprocmask (int HOW, const sigset_t *restrict SET, sigset_t *restrict OLDSET)'
+
+     'signal.h' (POSIX.1): *note Process Signal Mask::.
+
+'int SIGPROF'
+
+     'signal.h' (BSD): *note Alarm Signals::.
+
+'int SIGQUIT'
+
+     'signal.h' (POSIX.1): *note Termination Signals::.
+
+'int SIGSEGV'
+
+     'signal.h' (ISO): *note Program Error Signals::.
+
+'int sigsetjmp (sigjmp_buf STATE, int SAVESIGS)'
+
+     'setjmp.h' (POSIX.1): *note Non-Local Exits and Signals::.
+
+'SIG_SETMASK'
+
+     'signal.h' (POSIX.1): *note Process Signal Mask::.
+
+'int sigsetmask (int MASK)'
+
+     'signal.h' (BSD): *note BSD Signal Handling::.
+
+'sigset_t'
+
+     'signal.h' (POSIX.1): *note Signal Sets::.
+
+'int sigstack (struct sigstack *STACK, struct sigstack *OLDSTACK)'
+
+     'signal.h' (BSD): *note Signal Stack::.
+
+'int SIGSTOP'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'int sigsuspend (const sigset_t *SET)'
+
+     'signal.h' (POSIX.1): *note Sigsuspend::.
+
+'int SIGSYS'
+
+     'signal.h' (Unix): *note Program Error Signals::.
+
+'int SIGTERM'
+
+     'signal.h' (ISO): *note Termination Signals::.
+
+'int SIGTRAP'
+
+     'signal.h' (BSD): *note Program Error Signals::.
+
+'int SIGTSTP'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'int SIGTTIN'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'int SIGTTOU'
+
+     'signal.h' (POSIX.1): *note Job Control Signals::.
+
+'SIG_UNBLOCK'
+
+     'signal.h' (POSIX.1): *note Process Signal Mask::.
+
+'int SIGURG'
+
+     'signal.h' (BSD): *note Asynchronous I/O Signals::.
+
+'int SIGUSR1'
+
+     'signal.h' (POSIX.1): *note Miscellaneous Signals::.
+
+'int SIGUSR2'
+
+     'signal.h' (POSIX.1): *note Miscellaneous Signals::.
+
+'int SIGVTALRM'
+
+     'signal.h' (BSD): *note Alarm Signals::.
+
+'int SIGWINCH'
+
+     'signal.h' (BSD): *note Miscellaneous Signals::.
+
+'int SIGXCPU'
+
+     'signal.h' (BSD): *note Operation Error Signals::.
+
+'int SIGXFSZ'
+
+     'signal.h' (BSD): *note Operation Error Signals::.
+
+'double sin (double X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'void sincos (double X, double *SINX, double *COSX)'
+
+     'math.h' (GNU): *note Trig Functions::.
+
+'void sincosf (float X, float *SINX, float *COSX)'
+
+     'math.h' (GNU): *note Trig Functions::.
+
+'void sincosl (long double X, long double *SINX, long double *COSX)'
+
+     'math.h' (GNU): *note Trig Functions::.
+
+'float sinf (float X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'double sinh (double X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'float sinhf (float X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'long double sinhl (long double X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'long double sinl (long double X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'S_IREAD'
+
+     'sys/stat.h' (BSD): *note Permission Bits::.
+
+'S_IRGRP'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IROTH'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IRUSR'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IRWXG'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IRWXO'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IRWXU'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'int S_ISBLK (mode_t M)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_ISCHR (mode_t M)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_ISDIR (mode_t M)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_ISFIFO (mode_t M)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'S_ISGID'
+
+     'sys/stat.h' (POSIX): *note Permission Bits::.
+
+'int S_ISLNK (mode_t M)'
+
+     'sys/stat.h' (GNU): *note Testing File Type::.
+
+'int S_ISREG (mode_t M)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_ISSOCK (mode_t M)'
+
+     'sys/stat.h' (GNU): *note Testing File Type::.
+
+'S_ISUID'
+
+     'sys/stat.h' (POSIX): *note Permission Bits::.
+
+'S_ISVTX'
+
+     'sys/stat.h' (BSD): *note Permission Bits::.
+
+'S_IWGRP'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IWOTH'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IWRITE'
+
+     'sys/stat.h' (BSD): *note Permission Bits::.
+
+'S_IWUSR'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IXGRP'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IXOTH'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'S_IXUSR'
+
+     'sys/stat.h' (POSIX.1): *note Permission Bits::.
+
+'size_t'
+
+     'stddef.h' (ISO): *note Important Data Types::.
+
+'SIZE_WIDTH'
+
+     'stdint.h' (ISO): *note Width of Type::.
+
+'unsigned int sleep (unsigned int SECONDS)'
+
+     'unistd.h' (POSIX.1): *note Sleeping::.
+
+'float SNANF'
+
+     'math.h' (ISO): *note Infinity and NaN::.
+
+'int snprintf (char *S, size_t SIZE, const char *TEMPLATE, ...)'
+
+     'stdio.h' (GNU): *note Formatted Output Functions::.
+
+'SO_BROADCAST'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'int SOCK_DGRAM'
+
+     'sys/socket.h' (BSD): *note Communication Styles::.
+
+'int socket (int NAMESPACE, int STYLE, int PROTOCOL)'
+
+     'sys/socket.h' (BSD): *note Creating a Socket::.
+
+'int socketpair (int NAMESPACE, int STYLE, int PROTOCOL, int FILEDES[2])'
+
+     'sys/socket.h' (BSD): *note Socket Pairs::.
+
+'int SOCK_RAW'
+
+     'sys/socket.h' (BSD): *note Communication Styles::.
+
+'int SOCK_RDM'
+
+     'sys/socket.h' (BSD): *note Communication Styles::.
+
+'int SOCK_SEQPACKET'
+
+     'sys/socket.h' (BSD): *note Communication Styles::.
+
+'int SOCK_STREAM'
+
+     'sys/socket.h' (BSD): *note Communication Styles::.
+
+'SO_DEBUG'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_DONTROUTE'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_ERROR'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_KEEPALIVE'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_LINGER'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'int SOL_SOCKET'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_OOBINLINE'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_RCVBUF'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_REUSEADDR'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_SNDBUF'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'SO_STYLE'
+
+     'sys/socket.h' (GNU): *note Socket-Level Options::.
+
+'SO_TYPE'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'speed_t'
+
+     'termios.h' (POSIX.1): *note Line Speed::.
+
+'int sprintf (char *S, const char *TEMPLATE, ...)'
+
+     'stdio.h' (ISO): *note Formatted Output Functions::.
+
+'double sqrt (double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'float sqrtf (float X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'long double sqrtl (long double X)'
+
+     'math.h' (ISO): *note Exponents and Logarithms::.
+
+'void srand (unsigned int SEED)'
+
+     'stdlib.h' (ISO): *note ISO Random::.
+
+'void srand48 (long int SEEDVAL)'
+
+     'stdlib.h' (SVID): *note SVID Random::.
+
+'int srand48_r (long int SEEDVAL, struct drand48_data *BUFFER)'
+
+     'stdlib.h' (GNU): *note SVID Random::.
+
+'void srandom (unsigned int SEED)'
+
+     'stdlib.h' (BSD): *note BSD Random::.
+
+'int srandom_r (unsigned int SEED, struct random_data *BUF)'
+
+     'stdlib.h' (GNU): *note BSD Random::.
+
+'int sscanf (const char *S, const char *TEMPLATE, ...)'
+
+     'stdio.h' (ISO): *note Formatted Input Functions::.
+
+'sighandler_t ssignal (int SIGNUM, sighandler_t ACTION)'
+
+     'signal.h' (SVID): *note Basic Signal Handling::.
+
+'ssize_t SSIZE_MAX'
+
+     'limits.h' (POSIX.1): *note General Limits::.
+
+'ssize_t'
+
+     'unistd.h' (POSIX.1): *note I/O Primitives::.
+
+'stack_t'
+
+     'signal.h' (XPG): *note Signal Stack::.
+
+'int stat (const char *FILENAME, struct stat *BUF)'
+
+     'sys/stat.h' (POSIX.1): *note Reading Attributes::.
+
+'int stat64 (const char *FILENAME, struct stat64 *BUF)'
+
+     'sys/stat.h' (Unix98): *note Reading Attributes::.
+
+'__STDC_WANT_IEC_60559_BFP_EXT__'
+
+     (ISO): *note Feature Test Macros::.
+
+'__STDC_WANT_IEC_60559_FUNCS_EXT__'
+
+     (ISO): *note Feature Test Macros::.
+
+'__STDC_WANT_LIB_EXT2__'
+
+     (ISO): *note Feature Test Macros::.
+
+'FILE * stderr'
+
+     'stdio.h' (ISO): *note Standard Streams::.
+
+'STDERR_FILENO'
+
+     'unistd.h' (POSIX.1): *note Descriptors and Streams::.
+
+'FILE * stdin'
+
+     'stdio.h' (ISO): *note Standard Streams::.
+
+'STDIN_FILENO'
+
+     'unistd.h' (POSIX.1): *note Descriptors and Streams::.
+
+'FILE * stdout'
+
+     'stdio.h' (ISO): *note Standard Streams::.
+
+'STDOUT_FILENO'
+
+     'unistd.h' (POSIX.1): *note Descriptors and Streams::.
+
+'int stime (const time_t *NEWTIME)'
+
+     'time.h' (SVID, XPG): *note Simple Calendar Time::.
+
+'char * stpcpy (char *restrict TO, const char *restrict FROM)'
+
+     'string.h' (Unknown origin): *note Copying Strings and Arrays::.
+
+'char * stpncpy (char *restrict TO, const char *restrict FROM, size_t SIZE)'
+
+     'string.h' (GNU): *note Truncating Strings::.
+
+'int strcasecmp (const char *S1, const char *S2)'
+
+     'string.h' (BSD): *note String/Array Comparison::.
+
+'char * strcasestr (const char *HAYSTACK, const char *NEEDLE)'
+
+     'string.h' (GNU): *note Search Functions::.
+
+'char * strcat (char *restrict TO, const char *restrict FROM)'
+
+     'string.h' (ISO): *note Concatenating Strings::.
+
+'char * strchr (const char *STRING, int C)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'char * strchrnul (const char *STRING, int C)'
+
+     'string.h' (GNU): *note Search Functions::.
+
+'int strcmp (const char *S1, const char *S2)'
+
+     'string.h' (ISO): *note String/Array Comparison::.
+
+'int strcoll (const char *S1, const char *S2)'
+
+     'string.h' (ISO): *note Collation Functions::.
+
+'char * strcpy (char *restrict TO, const char *restrict FROM)'
+
+     'string.h' (ISO): *note Copying Strings and Arrays::.
+
+'size_t strcspn (const char *STRING, const char *STOPSET)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'char * strdupa (const char *S)'
+
+     'string.h' (GNU): *note Copying Strings and Arrays::.
+
+'int STREAM_MAX'
+
+     'limits.h' (POSIX.1): *note General Limits::.
+
+'char * strerror (int ERRNUM)'
+
+     'string.h' (ISO): *note Error Messages::.
+
+'char * strerror_r (int ERRNUM, char *BUF, size_t N)'
+
+     'string.h' (GNU): *note Error Messages::.
+
+'int strfromd (char *restrict STRING, size_t SIZE, const char *restrict FORMAT, double VALUE)'
+
+     'stdlib.h' (ISO/IEC TS 18661-1): *note Printing of Floats::.
+
+'char * strfry (char *STRING)'
+
+     'string.h' (GNU): *note strfry::.
+
+'size_t strftime (char *S, size_t SIZE, const char *TEMPLATE, const struct tm *BROKENTIME)'
+
+     'time.h' (ISO): *note Formatting Calendar Time::.
+
+'size_t strlen (const char *S)'
+
+     'string.h' (ISO): *note String Length::.
+
+'int strncasecmp (const char *S1, const char *S2, size_t N)'
+
+     'string.h' (BSD): *note String/Array Comparison::.
+
+'char * strncat (char *restrict TO, const char *restrict FROM, size_t SIZE)'
+
+     'string.h' (ISO): *note Truncating Strings::.
+
+'int strncmp (const char *S1, const char *S2, size_t SIZE)'
+
+     'string.h' (ISO): *note String/Array Comparison::.
+
+'char * strncpy (char *restrict TO, const char *restrict FROM, size_t SIZE)'
+
+     'string.h' (string.h): *note Truncating Strings::.
+
+'char * strndup (const char *S, size_t SIZE)'
+
+     'string.h' (GNU): *note Truncating Strings::.
+
+'char * strndupa (const char *S, size_t SIZE)'
+
+     'string.h' (GNU): *note Truncating Strings::.
+
+'size_t strnlen (const char *S, size_t MAXLEN)'
+
+     'string.h' (GNU): *note String Length::.
+
+'char * strpbrk (const char *STRING, const char *STOPSET)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'char * strptime (const char *S, const char *FMT, struct tm *TP)'
+
+     'time.h' (XPG4): *note Low-Level Time String Parsing::.
+
+'char * strrchr (const char *STRING, int C)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'char * strsep (char **STRING_PTR, const char *DELIMITER)'
+
+     'string.h' (BSD): *note Finding Tokens in a String::.
+
+'char * strsignal (int SIGNUM)'
+
+     'string.h' (GNU): *note Signal Messages::.
+
+'size_t strspn (const char *STRING, const char *SKIPSET)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'char * strstr (const char *HAYSTACK, const char *NEEDLE)'
+
+     'string.h' (ISO): *note Search Functions::.
+
+'double strtod (const char *restrict STRING, char **restrict TAILPTR)'
+
+     'stdlib.h' (ISO): *note Parsing of Floats::.
+
+'float strtof (const char *STRING, char **TAILPTR)'
+
+     'stdlib.h' (ISO): *note Parsing of Floats::.
+
+'intmax_t strtoimax (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'inttypes.h' (ISO): *note Parsing of Integers::.
+
+'char * strtok (char *restrict NEWSTRING, const char *restrict DELIMITERS)'
+
+     'string.h' (ISO): *note Finding Tokens in a String::.
+
+'char * strtok_r (char *NEWSTRING, const char *DELIMITERS, char **SAVE_PTR)'
+
+     'string.h' (POSIX): *note Finding Tokens in a String::.
+
+'long int strtol (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (ISO): *note Parsing of Integers::.
+
+'long double strtold (const char *STRING, char **TAILPTR)'
+
+     'stdlib.h' (ISO): *note Parsing of Floats::.
+
+'long long int strtoll (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (ISO): *note Parsing of Integers::.
+
+'long long int strtoq (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (BSD): *note Parsing of Integers::.
+
+'unsigned long int strtoul (const char *retrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (ISO): *note Parsing of Integers::.
+
+'unsigned long long int strtoull (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (ISO): *note Parsing of Integers::.
+
+'uintmax_t strtoumax (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'inttypes.h' (ISO): *note Parsing of Integers::.
+
+'unsigned long long int strtouq (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
+
+     'stdlib.h' (BSD): *note Parsing of Integers::.
+
+'struct aiocb'
+
+     'aio.h' (POSIX.1b): *note Asynchronous I/O::.
+
+'struct aiocb64'
+
+     'aio.h' (POSIX.1b): *note Asynchronous I/O::.
+
+'struct aioinit'
+
+     'aio.h' (GNU): *note Configuration of AIO::.
+
+'struct argp'
+
+     'argp.h' (GNU): *note Argp Parsers::.
+
+'struct argp_child'
+
+     'argp.h' (GNU): *note Argp Children::.
+
+'struct argp_option'
+
+     'argp.h' (GNU): *note Argp Option Vectors::.
+
+'struct argp_state'
+
+     'argp.h' (GNU): *note Argp Parsing State::.
+
+'struct dirent'
+
+     'dirent.h' (POSIX.1): *note Directory Entries::.
+
+'struct exit_status'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'struct flock'
+
+     'fcntl.h' (POSIX.1): *note File Locks::.
+
+'struct fstab'
+
+     'fstab.h' (BSD): *note fstab::.
+
+'struct FTW'
+
+     'ftw.h' (XPG4.2): *note Working with Directory Trees::.
+
+'struct __gconv_step'
+
+     'gconv.h' (GNU): *note glibc iconv Implementation::.
+
+'struct __gconv_step_data'
+
+     'gconv.h' (GNU): *note glibc iconv Implementation::.
+
+'struct group'
+
+     'grp.h' (POSIX.1): *note Group Data Structure::.
+
+'struct hostent'
+
+     'netdb.h' (BSD): *note Host Names::.
+
+'struct if_nameindex'
+
+     'net/if.h' (IPv6 basic API): *note Interface Naming::.
+
+'struct in6_addr'
+
+     'netinet/in.h' (IPv6 basic API): *note Host Address Data Type::.
+
+'struct in_addr'
+
+     'netinet/in.h' (BSD): *note Host Address Data Type::.
+
+'struct iovec'
+
+     'sys/uio.h' (BSD): *note Scatter-Gather::.
+
+'struct itimerval'
+
+     'sys/time.h' (BSD): *note Setting an Alarm::.
+
+'struct lconv'
+
+     'locale.h' (ISO): *note The Lame Way to Locale Data::.
+
+'struct linger'
+
+     'sys/socket.h' (BSD): *note Socket-Level Options::.
+
+'struct mallinfo'
+
+     'malloc.h' (GNU): *note Statistics of Malloc::.
+
+'struct mntent'
+
+     'mntent.h' (BSD): *note mtab::.
+
+'struct msghdr'
+
+     'sys/socket.h' (BSD): *note Receiving Datagrams::.
+
+'struct netent'
+
+     'netdb.h' (BSD): *note Networks Database::.
+
+'struct obstack'
+
+     'obstack.h' (GNU): *note Creating Obstacks::.
+
+'struct option'
+
+     'getopt.h' (GNU): *note Getopt Long Options::.
+
+'struct passwd'
+
+     'pwd.h' (POSIX.1): *note User Data Structure::.
+
+'struct printf_info'
+
+     'printf.h' (GNU): *note Conversion Specifier Options::.
+
+'struct protoent'
+
+     'netdb.h' (BSD): *note Protocols Database::.
+
+'struct random_data'
+
+     'stdlib.h' (GNU): *note BSD Random::.
+
+'struct rlimit'
+
+     'sys/resource.h' (BSD): *note Limits on Resources::.
+
+'struct rlimit64'
+
+     'sys/resource.h' (Unix98): *note Limits on Resources::.
+
+'struct rusage'
+
+     'sys/resource.h' (BSD): *note Resource Usage::.
+
+'struct sched_param'
+
+     'sched.h' (POSIX): *note Basic Scheduling Functions::.
+
+'struct servent'
+
+     'netdb.h' (BSD): *note Services Database::.
+
+'struct sgttyb'
+
+     'termios.h' (BSD): *note BSD Terminal Modes::.
+
+'struct sigaction'
+
+     'signal.h' (POSIX.1): *note Advanced Signal Handling::.
+
+'struct sigstack'
+
+     'signal.h' (BSD): *note Signal Stack::.
+
+'struct sockaddr'
+
+     'sys/socket.h' (BSD): *note Address Formats::.
+
+'struct sockaddr_in'
+
+     'netinet/in.h' (BSD): *note Internet Address Formats::.
+
+'struct sockaddr_un'
+
+     'sys/un.h' (BSD): *note Local Namespace Details::.
+
+'struct stat'
+
+     'sys/stat.h' (POSIX.1): *note Attribute Meanings::.
+
+'struct stat64'
+
+     'sys/stat.h' (LFS): *note Attribute Meanings::.
+
+'struct termios'
+
+     'termios.h' (POSIX.1): *note Mode Data Types::.
+
+'struct timespec'
+
+     'sys/time.h' (POSIX.1): *note Elapsed Time::.
+
+'struct timeval'
+
+     'sys/time.h' (BSD): *note Elapsed Time::.
+
+'struct timezone'
+
+     'sys/time.h' (BSD): *note High-Resolution Calendar::.
+
+'struct tm'
+
+     'time.h' (ISO): *note Broken-down Time::.
+
+'struct tms'
+
+     'sys/times.h' (POSIX.1): *note Processor Time::.
+
+'struct utimbuf'
+
+     'utime.h' (POSIX.1): *note File Times::.
+
+'struct utsname'
+
+     'sys/utsname.h' (POSIX.1): *note Platform Type::.
+
+'int strverscmp (const char *S1, const char *S2)'
+
+     'string.h' (GNU): *note String/Array Comparison::.
+
+'size_t strxfrm (char *restrict TO, const char *restrict FROM, size_t SIZE)'
+
+     'string.h' (ISO): *note Collation Functions::.
+
+'int stty (int FILEDES, const struct sgttyb *ATTRIBUTES)'
+
+     'sgtty.h' (BSD): *note BSD Terminal Modes::.
+
+'int S_TYPEISMQ (struct stat *S)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_TYPEISSEM (struct stat *S)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int S_TYPEISSHM (struct stat *S)'
+
+     'sys/stat.h' (POSIX): *note Testing File Type::.
+
+'int SUN_LEN (_struct sockaddr_un *_ PTR)'
+
+     'sys/un.h' (BSD): *note Local Namespace Details::.
+
+'int swapcontext (ucontext_t *restrict OUCP, const ucontext_t *restrict UCP)'
+
+     'ucontext.h' (SVID): *note System V contexts::.
+
+'int swprintf (wchar_t *WS, size_t SIZE, const wchar_t *TEMPLATE, ...)'
+
+     'wchar.h' (GNU): *note Formatted Output Functions::.
+
+'int swscanf (const wchar_t *WS, const wchar_t *TEMPLATE, ...)'
+
+     'wchar.h' (ISO): *note Formatted Input Functions::.
+
+'int symlink (const char *OLDNAME, const char *NEWNAME)'
+
+     'unistd.h' (BSD): *note Symbolic Links::.
+
+'SYMLINK_MAX'
+
+     'limits.h' (POSIX.1): *note File Minimums::.
+
+'void sync (void)'
+
+     'unistd.h' (X/Open): *note Synchronizing I/O::.
+
+'long int syscall (long int SYSNO, ...)'
+
+     'unistd.h' (???): *note System Calls::.
+
+'long int sysconf (int PARAMETER)'
+
+     'unistd.h' (POSIX.1): *note Sysconf Definition::.
+
+'int sysctl (int *NAMES, int NLEN, void *OLDVAL, size_t *OLDLENP, void *NEWVAL, size_t NEWLEN)'
+
+     'sys/sysctl.h' (BSD): *note System Parameters::.
+
+'void syslog (int FACILITY_PRIORITY, const char *FORMAT, ...)'
+
+     'syslog.h' (BSD): *note syslog; vsyslog::.
+
+'int system (const char *COMMAND)'
+
+     'stdlib.h' (ISO): *note Running a Command::.
+
+'sighandler_t sysv_signal (int SIGNUM, sighandler_t ACTION)'
+
+     'signal.h' (GNU): *note Basic Signal Handling::.
+
+'double tan (double X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'float tanf (float X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'double tanh (double X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'float tanhf (float X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'long double tanhl (long double X)'
+
+     'math.h' (ISO): *note Hyperbolic Functions::.
+
+'long double tanl (long double X)'
+
+     'math.h' (ISO): *note Trig Functions::.
+
+'int tcdrain (int FILEDES)'
+
+     'termios.h' (POSIX.1): *note Line Control::.
+
+'tcflag_t'
+
+     'termios.h' (POSIX.1): *note Mode Data Types::.
+
+'int tcflow (int FILEDES, int ACTION)'
+
+     'termios.h' (POSIX.1): *note Line Control::.
+
+'int tcflush (int FILEDES, int QUEUE)'
+
+     'termios.h' (POSIX.1): *note Line Control::.
+
+'int tcgetattr (int FILEDES, struct termios *TERMIOS-P)'
+
+     'termios.h' (POSIX.1): *note Mode Functions::.
+
+'pid_t tcgetpgrp (int FILEDES)'
+
+     'unistd.h' (POSIX.1): *note Terminal Access Functions::.
+
+'pid_t tcgetsid (int FILDES)'
+
+     'termios.h' (Unix98): *note Terminal Access Functions::.
+
+'TCSADRAIN'
+
+     'termios.h' (POSIX.1): *note Mode Functions::.
+
+'TCSAFLUSH'
+
+     'termios.h' (POSIX.1): *note Mode Functions::.
+
+'TCSANOW'
+
+     'termios.h' (POSIX.1): *note Mode Functions::.
+
+'TCSASOFT'
+
+     'termios.h' (BSD): *note Mode Functions::.
+
+'int tcsendbreak (int FILEDES, int DURATION)'
+
+     'termios.h' (POSIX.1): *note Line Control::.
+
+'int tcsetattr (int FILEDES, int WHEN, const struct termios *TERMIOS-P)'
+
+     'termios.h' (POSIX.1): *note Mode Functions::.
+
+'int tcsetpgrp (int FILEDES, pid_t PGID)'
+
+     'unistd.h' (POSIX.1): *note Terminal Access Functions::.
+
+'void * tdelete (const void *KEY, void **ROOTP, comparison_fn_t COMPAR)'
+
+     'search.h' (SVID): *note Tree Search Function::.
+
+'void tdestroy (void *VROOT, __free_fn_t FREEFCT)'
+
+     'search.h' (GNU): *note Tree Search Function::.
+
+'long int telldir (DIR *DIRSTREAM)'
+
+     'dirent.h' (BSD): *note Random Access Directory::.
+
+'TEMP_FAILURE_RETRY (EXPRESSION)'
+
+     'unistd.h' (GNU): *note Interrupted Primitives::.
+
+'char * tempnam (const char *DIR, const char *PREFIX)'
+
+     'stdio.h' (SVID): *note Temporary Files::.
+
+'char * textdomain (const char *DOMAINNAME)'
+
+     'libintl.h' (GNU): *note Locating gettext catalog::.
+
+'void * tfind (const void *KEY, void *const *ROOTP, comparison_fn_t COMPAR)'
+
+     'search.h' (SVID): *note Tree Search Function::.
+
+'double tgamma (double X)'
+
+     'math.h' (XPG, ISO): *note Special Functions::.
+
+'float tgammaf (float X)'
+
+     'math.h' (XPG, ISO): *note Special Functions::.
+
+'long double tgammal (long double X)'
+
+     'math.h' (XPG, ISO): *note Special Functions::.
+
+'time_t time (time_t *RESULT)'
+
+     'time.h' (ISO): *note Simple Calendar Time::.
+
+'time_t timegm (struct tm *BROKENTIME)'
+
+     'time.h' (???): *note Broken-down Time::.
+
+'time_t timelocal (struct tm *BROKENTIME)'
+
+     'time.h' (???): *note Broken-down Time::.
+
+'clock_t times (struct tms *BUFFER)'
+
+     'sys/times.h' (POSIX.1): *note Processor Time::.
+
+'time_t'
+
+     'time.h' (ISO): *note Simple Calendar Time::.
+
+'long int timezone'
+
+     'time.h' (SVID): *note Time Zone Functions::.
+
+'FILE * tmpfile (void)'
+
+     'stdio.h' (ISO): *note Temporary Files::.
+
+'FILE * tmpfile64 (void)'
+
+     'stdio.h' (Unix98): *note Temporary Files::.
+
+'int TMP_MAX'
+
+     'stdio.h' (ISO): *note Temporary Files::.
+
+'char * tmpnam (char *RESULT)'
+
+     'stdio.h' (ISO): *note Temporary Files::.
+
+'char * tmpnam_r (char *RESULT)'
+
+     'stdio.h' (GNU): *note Temporary Files::.
+
+'int toascii (int C)'
+
+     'ctype.h' (SVID, BSD): *note Case Conversion::.
+
+'int _tolower (int C)'
+
+     'ctype.h' (SVID): *note Case Conversion::.
+
+'int tolower (int C)'
+
+     'ctype.h' (ISO): *note Case Conversion::.
+
+'tcflag_t TOSTOP'
+
+     'termios.h' (POSIX.1): *note Local Modes::.
+
+'int totalorder (double X, double Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int totalordermag (double X, double Y)'
+
+     'math.h' (ISO): *note FP Comparison Functions::.
+
+'int _toupper (int C)'
+
+     'ctype.h' (SVID): *note Case Conversion::.
+
+'int toupper (int C)'
+
+     'ctype.h' (ISO): *note Case Conversion::.
+
+'wint_t towctrans (wint_t WC, wctrans_t DESC)'
+
+     'wctype.h' (ISO): *note Wide Character Case Conversion::.
+
+'wint_t towlower (wint_t WC)'
+
+     'wctype.h' (ISO): *note Wide Character Case Conversion::.
+
+'wint_t towupper (wint_t WC)'
+
+     'wctype.h' (ISO): *note Wide Character Case Conversion::.
+
+'double trunc (double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'int truncate (const char *FILENAME, off_t LENGTH)'
+
+     'unistd.h' (X/Open): *note File Size::.
+
+'int truncate64 (const char *NAME, off64_t LENGTH)'
+
+     'unistd.h' (Unix98): *note File Size::.
+
+'float truncf (float X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'long double truncl (long double X)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'TRY_AGAIN'
+
+     'netdb.h' (BSD): *note Host Names::.
+
+'void * tsearch (const void *KEY, void **ROOTP, comparison_fn_t COMPAR)'
+
+     'search.h' (SVID): *note Tree Search Function::.
+
+'char * ttyname (int FILEDES)'
+
+     'unistd.h' (POSIX.1): *note Is It a Terminal::.
+
+'int ttyname_r (int FILEDES, char *BUF, size_t LEN)'
+
+     'unistd.h' (POSIX.1): *note Is It a Terminal::.
+
+'void twalk (const void *ROOT, __action_fn_t ACTION)'
+
+     'search.h' (SVID): *note Tree Search Function::.
+
+'char * tzname [2]'
+
+     'time.h' (POSIX.1): *note Time Zone Functions::.
+
+'int TZNAME_MAX'
+
+     'limits.h' (POSIX.1): *note General Limits::.
+
+'void tzset (void)'
+
+     'time.h' (POSIX.1): *note Time Zone Functions::.
+
+'UCHAR_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'UCHAR_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'ucontext_t'
+
+     'ucontext.h' (SVID): *note System V contexts::.
+
+'uintmax_t ufromfp (double X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uintmax_t ufromfpf (float X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uintmax_t ufromfpl (long double X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uintmax_t ufromfpx (double X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uintmax_t ufromfpxf (float X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uintmax_t ufromfpxl (long double X, int ROUND, unsigned int WIDTH)'
+
+     'math.h' (ISO): *note Rounding Functions::.
+
+'uid_t'
+
+     'sys/types.h' (POSIX.1): *note Reading Persona::.
+
+'UINT_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'UINTPTR_WIDTH'
+
+     'stdint.h' (ISO): *note Width of Type::.
+
+'UINT_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'long int ulimit (int CMD, ...)'
+
+     'ulimit.h' (BSD): *note Limits on Resources::.
+
+'ULLONG_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'ULLONG_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'ULONG_LONG_MAX'
+
+     'limits.h' (GNU): *note Range of Type::.
+
+'ULONG_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'ULONG_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'mode_t umask (mode_t MASK)'
+
+     'sys/stat.h' (POSIX.1): *note Setting Permissions::.
+
+'int umount (const char *FILE)'
+
+     'sys/mount.h' (SVID, GNU): *note Mount-Unmount-Remount::.
+
+'int umount2 (const char *FILE, int FLAGS)'
+
+     'sys/mount.h' (GNU): *note Mount-Unmount-Remount::.
+
+'int uname (struct utsname *INFO)'
+
+     'sys/utsname.h' (POSIX.1): *note Platform Type::.
+
+'int ungetc (int C, FILE *STREAM)'
+
+     'stdio.h' (ISO): *note How Unread::.
+
+'wint_t ungetwc (wint_t WC, FILE *STREAM)'
+
+     'wchar.h' (ISO): *note How Unread::.
+
+'int unlink (const char *FILENAME)'
+
+     'unistd.h' (POSIX.1): *note Deleting Files::.
+
+'int unlockpt (int FILEDES)'
+
+     'stdlib.h' (SVID, XPG4.2): *note Allocation::.
+
+'int unsetenv (const char *NAME)'
+
+     'stdlib.h' (BSD): *note Environment Access::.
+
+'void updwtmp (const char *WTMP_FILE, const struct utmp *UTMP)'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'USER_PROCESS'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'USER_PROCESS'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'USHRT_MAX'
+
+     'limits.h' (ISO): *note Range of Type::.
+
+'USHRT_WIDTH'
+
+     'limits.h' (ISO): *note Width of Type::.
+
+'int utime (const char *FILENAME, const struct utimbuf *TIMES)'
+
+     'utime.h' (POSIX.1): *note File Times::.
+
+'int utimes (const char *FILENAME, const struct timeval TVP[2])'
+
+     'sys/time.h' (BSD): *note File Times::.
+
+'int utmpname (const char *FILE)'
+
+     'utmp.h' (SVID): *note Manipulating the Database::.
+
+'int utmpxname (const char *FILE)'
+
+     'utmpx.h' (XPG4.2): *note XPG Functions::.
+
+'TYPE va_arg (va_list AP, TYPE)'
+
+     'stdarg.h' (ISO): *note Argument Macros::.
+
+'void va_copy (va_list DEST, va_list SRC)'
+
+     'stdarg.h' (ISO): *note Argument Macros::.
+
+'void va_end (va_list AP)'
+
+     'stdarg.h' (ISO): *note Argument Macros::.
+
+'va_list'
+
+     'stdarg.h' (ISO): *note Argument Macros::.
+
+'void * valloc (size_t SIZE)'
+
+     'malloc.h',  stdlib.h’ (BSD): *note Aligned Memory Blocks::.
+
+'int vasprintf (char **PTR, const char *TEMPLATE, va_list AP)'
+
+     'stdio.h' (GNU): *note Variable Arguments Output::.
+
+'void va_start (va_list AP, LAST-REQUIRED)'
+
+     'stdarg.h' (ISO): *note Argument Macros::.
+
+'int VDISCARD'
+
+     'termios.h' (BSD): *note Other Special::.
+
+'int VDSUSP'
+
+     'termios.h' (BSD): *note Signal Characters::.
+
+'int VEOF'
+
+     'termios.h' (POSIX.1): *note Editing Characters::.
+
+'int VEOL'
+
+     'termios.h' (POSIX.1): *note Editing Characters::.
+
+'int VEOL2'
+
+     'termios.h' (BSD): *note Editing Characters::.
+
+'int VERASE'
+
+     'termios.h' (POSIX.1): *note Editing Characters::.
+
+'void verr (int STATUS, const char *FORMAT, va_list AP)'
+
+     'err.h' (BSD): *note Error Messages::.
+
+'void verrx (int STATUS, const char *FORMAT, va_list AP)'
+
+     'err.h' (BSD): *note Error Messages::.
+
+'int versionsort (const struct dirent **A, const struct dirent **B)'
+
+     'dirent.h' (GNU): *note Scanning Directory Content::.
+
+'int versionsort64 (const struct dirent64 **A, const struct dirent64 **B)'
+
+     'dirent.h' (GNU): *note Scanning Directory Content::.
+
+'pid_t vfork (void)'
+
+     'unistd.h' (BSD): *note Creating a Process::.
+
+'int vfprintf (FILE *STREAM, const char *TEMPLATE, va_list AP)'
+
+     'stdio.h' (ISO): *note Variable Arguments Output::.
+
+'int vfscanf (FILE *STREAM, const char *TEMPLATE, va_list AP)'
+
+     'stdio.h' (ISO): *note Variable Arguments Input::.
+
+'int vfwprintf (FILE *STREAM, const wchar_t *TEMPLATE, va_list AP)'
+
+     'wchar.h' (ISO): *note Variable Arguments Output::.
+
+'int vfwscanf (FILE *STREAM, const wchar_t *TEMPLATE, va_list AP)'
+
+     'wchar.h' (ISO): *note Variable Arguments Input::.
+
+'int VINTR'
+
+     'termios.h' (POSIX.1): *note Signal Characters::.
+
+'int VKILL'
+
+     'termios.h' (POSIX.1): *note Editing Characters::.
+
+'int vlimit (int RESOURCE, int LIMIT)'
+
+     'sys/vlimit.h' (BSD): *note Limits on Resources::.
+
+'int VLNEXT'
+
+     'termios.h' (BSD): *note Other Special::.
+
+'int VMIN'
+
+ vim:tw=78:ts=8:ft=help:norl:
+vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:
