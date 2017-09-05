@@ -17,13 +17,13 @@ function! vinfo#conversion#info2help()
     exe "silent norm! Go" . ' vim:tw=78:ts=8:ft=help:norl:' . "\<Esc>gg"
 
     "" Common ones
-    %s/‘/'/e
-    %s/’/'/e
-    %s/“/'/e
-    %s/”/'/e
-    %s/•/-/e
+    exe "silent! %s/‘/'/e"
+    exe "silent! %s/’/'/e"
+    exe "silent! %s/“/'/e"
+    exe "silent! %s/”/'/e"
+    exe "silent! %s/•/-/e"
     "" The rest of them
-    %s/[^\x00-\x7F]/ /e
+    exe 'silent! %s/[^\x00-\x7F]/ /e'
 
     " Convert node subtitles (replace = underlining with -)
     exe "silent " . 'g/\v^$\n.+\n\=+\n^$\n/norm! jjvg_r-\<Esc>'
