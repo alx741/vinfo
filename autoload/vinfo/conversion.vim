@@ -16,6 +16,16 @@ function! vinfo#conversion#info2help()
     " tw=78 ts=8 ft=help norl
     norm! Go vim:tw=78:ts=8:ft=help:norl:
 
+    " Remove non-ascii chars
+    "" Common ones
+    %s/‘/'/e
+    %s/’/'/e
+    %s/“/'/e
+    %s/”/'/e
+    %s/•/-/e
+    "" The rest of them
+    %s/[^\x00-\x7F]/ /e
+
     " Convert node subtitles (replace = and . underlining with -)
     g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
 
