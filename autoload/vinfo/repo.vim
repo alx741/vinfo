@@ -30,11 +30,11 @@ function! vinfo#repo#create(path, doc)
     echom '[Vinfo] Creating repo for: ' . a:doc
     let l:doc_path = a:path . '/' . a:doc . '/'
     let l:doc = l:doc_path . a:doc . '.txt'
-    exe 'silent !mkdir -p ' . l:doc_path
+    exe 'silent !mkdir ' . l:doc_path
     exe 'silent !info ' . a:doc . ' >> ' . l:doc
     exe 'silent !split -l 5000 -d --additional-suffix .txt ' . l:doc . ' ' . l:doc_path . a:doc
     exe 'silent !rm ' . l:doc
-    redraw!
+    exe 'redraw!'
 
     " If DOC is not a valid Info file, none file will be created
     let l:doc_files = split(globpath(l:doc_path, '*'), '\n')
@@ -54,6 +54,6 @@ endfunction
 function! vinfo#repo#clean(path)
     echom '[Vinfo] Cleaning repository'
     exe 'silent !rm -rf ' . a:path . '/*'
-    redraw!
+    exe 'redraw!'
 endfunction
 " }}}1

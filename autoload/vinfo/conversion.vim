@@ -14,41 +14,33 @@ function! vinfo#conversion#info2help()
 
     " Add vim modelines for help-file
     " tw=78 ts=8 ft=help norl
-    norm! Go vim:tw=78:ts=8:ft=help:norl:
+    exe "silent norm! Go" . ' vim:tw=78:ts=8:ft=help:norl:' . "\<Esc>gg"
 
-    " Remove non-ascii chars
-    "" Common ones
-    %s/‘/'/e
-    %s/’/'/e
-    %s/“/"/e
-    %s/”/"/e
-    %s/•/-/e
-    "" The rest of them
-    %s/[^\x00-\x7F]/ /e
-
-    " Convert node subtitles (replace = and . underlining with -)
-    g/\v^$\n.+\n[=.]+\n^$\n/+2 s/[=.]/-/g
+    " Convert node subtitles (replace = underlining with -)
+    exe "silent " . 'g/\v^$\n.+\n\=+\n^$\n/norm! jjvg_r-\<Esc>'
+    " Convert node subtitles (replace . underlining with -)
+    exe "silent " . 'g/\v^$\n.+\n\.+\n^$\n/norm! jjvg_r-\<Esc>'
 
     " Convert node titles (replace * underlining with =)
-    g/\v^$\n.+\n\*+\n^$\n/+2 s/\*/=/g
+    exe "silent " . 'g/\v^$\n.+\n\*+\n^$\n/norm! jjvg_r=\<Esc>'
 
     " Convert Menu marks to vim help-files syntax
-    %s/^* Menu:/MENU/e
+    exe 'silent %s/^* Menu:/MENU/e'
 
     " Create tag references
     " Change blank spaces, '-' with '_' and apply tag notation with '|'
-    g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V[ -]/_/ge
-    %s/\v^\*\s+(.+)::/\* |\1|::/e
+    exe 'silent g/\v^\*\s+(.+)::/exe "norm! Wvt:\<Esc>"|s/\%V /_/ge|s/\%V-/_/ge'
+    exe 'silent %s/\v^\*\s+(.+)::/\* |\1|::/e'
 
     " Remove false tags
-    g/\v\*[^\* ]+\*/ norm! f*xf*x
+    exe 'silent g/\v\*[^\* ]+\*/exe "norm! f*xf*x"'
 
     " Create tags
-    g/\v^File: /call s:Create_tag()
+    exe 'silent g/\v^File: /call s:Create_tag()'
 
     " Mark Nodes separations
     let @o = "==============================================================================\n"
-    g/\v^File: /norm! "oPj"op
+    exe 'silent g/\v^File: /exe "norm! \"oPj\"op\<Esc>"'
 endfunction
 " }}}1
 
@@ -59,46 +51,43 @@ endfunction
 " and add '*' tag notation
 function! s:Create_tag()
     " Create self node tag
-    /\vNode: \zs
-    " / in scripts only moves to the line of the match, not to the match
-    " because it is actually :/ and not plain /.  Therefore we use 0n to move
-    " to the match.
-    norm! 0n"oyt,mm
+    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>W\"oyt,mm"
     let @o = "\n*" . @o . "*\n"
-    put o
-    +1
-    s/[- ]/_/ge
-    right
-    norm! 'm
+    exe "silent norm! \"op"
+    exe 'silent norm! ' .  "j0V\<Esc>"
+    exe 'silent s/\%V /_/ge'
+    exe 'silent s/\%V-/_/ge'
+    exe 'silent right'
+    exe 'silent norm! ' . "\'m"
 
     " Create tag references
     " Node:
-    /\vNode: \zs
-    norm! 0nvt,y
-    call s:Format_tag()
-    " Next:
-    /\vNext: \zs
-    norm! 0nvt,y
-    call s:Format_tag()
-    " Prev:
-    /\vPrev: \zs
-    norm! 0nvt,y
-    call s:Format_tag()
-    " Up:
-    /\vUp: \zs
-    norm! 0nvg_y
-    call s:Format_tag()
-endfunction
-" }}}1
-
-
-
-" Format_Tag() {{{1
-function! s:Format_tag()
+    exe 'silent! norm! ' . '/\vNode: ' . "\<CR>Wvt,y\<Esc>"
     if @@ !~? '.\+|' && @@ !~? '.\+)'
-        s/\%V[ -]/_/ge
-        s/\%V.*\%V./|&|/
-        norm! 'm
+        exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
+        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+        exe 'silent norm! ' . "\'m"
+    endif
+    " Next:
+    exe 'silent! norm! ' . '/\vNext: ' . "\<CR>Wvt,y\<Esc>"
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
+        exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
+        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+        exe 'silent norm! ' . "\'m"
+    endif
+    " Prev:
+    exe 'silent! norm! ' . '/\vPrev: ' . "\<CR>Wvt,y\<Esc>"
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
+        exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
+        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+        exe 'silent norm! ' . "\'m"
+    endif
+    " Up:
+    exe 'silent! norm! ' . '/\vUp: ' . "\<CR>Wvg_y\<Esc>"
+    if @@ !~? '.\+|' && @@ !~? '.\+)'
+        exe 'silent s/\%V /_/ge|s/\%V-/_/ge'
+        exe 'silent norm! ' . "gv\<Esc>a|\<Esc>gvo\<Esc>i|\<Esc>"
+        exe 'silent norm! ' . "\'m"
     endif
 endfunction
 " }}}1

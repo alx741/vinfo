@@ -5,7 +5,8 @@
 " =============================================================================
 
 
-let s:vinfo_repo_path = ($XDG_DATA_HOME ? $XDG_DATA_HOME : expand('~/.local/share')) . '/vinfo'
+let s:vinfo_autoload_path = expand('<sfile>:p:h')
+let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_doc_repo', ':p:h')
 let s:vinfo_current_doc = ""
 let s:vinfo_current_page = 0
 let s:vinfo_current_doc_pages = 0
@@ -35,7 +36,7 @@ function! vinfo#load_doc(doc)
             let s:vinfo_current_doc = ''
             let s:vinfo_current_page = 0
             let s:vinfo_current_doc_pages = 0
-            redraw!
+            exe 'redraw!'
             return 0
         endif
 
@@ -43,9 +44,9 @@ function! vinfo#load_doc(doc)
         let doc_files = split(globpath(s:vinfo_repo_path . '/' . a:doc, '*'), '\n')
         for doc_file in doc_files
             exe 'edit ' . doc_file
-            silent call vinfo#conversion#info2help()
+            call vinfo#conversion#info2help()
             write!
-            silent bdelete!
+            exe 'silent bdelete!'
             " Write appropriate modeline options in repo files
             exe 'silent ! echo "vim:ft=help bt=nowrite bufhidden=delete readonly nomodifiable nobuflisted:" >> ' . doc_file
         endfor
@@ -63,10 +64,15 @@ endfunction
 " Shos the DOC info doc in a new split window
 function! vinfo#show(doc, page)
     " Convert page number to appropriate -two digits- format
-    let page_number = printf('%02d', a:page)
-    exe 'split ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
-    redraw!
-    norm gg
+    let page_number = ''
+    if a:page <? 10
+        let page_number = '0' . a:page
+    endif
+
+    split
+    exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
+    exe 'redraw!'
+    exe 'norm gg'
 endfunction
 " }}}1
 
