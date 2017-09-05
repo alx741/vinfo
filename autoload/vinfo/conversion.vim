@@ -20,8 +20,8 @@ function! vinfo#conversion#info2help()
     "" Common ones
     %s/‘/'/e
     %s/’/'/e
-    %s/“/'/e
-    %s/”/'/e
+    %s/“/"/e
+    %s/”/"/e
     %s/•/-/e
     "" The rest of them
     %s/[^\x00-\x7F]/ /e
