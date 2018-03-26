@@ -61,7 +61,7 @@ endfunction
 
 
 " show(doc, page) {{{1
-" Shos the DOC info doc in a new split window
+" Shows the DOC info doc in a new split window
 function! vinfo#show(doc, page)
     " Convert page number to appropriate -two digits- format
     let page_number = ''
