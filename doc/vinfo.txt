@@ -33,9 +33,9 @@ Read the DOC info documentation with:
 
   :Vinfo doc
 
-* The first time you read a info doc file, it will take Vinfo a few seconds to
-* create a repository and convert the info file to Vim help-text syntax.
-* But don't worry, it's just the first time.
+The first time you read an info doc file, it will take Vinfo a few seconds to
+create a repository and convert the info file to Vim help-text syntax, but
+don't worry, it only occurs the first time
 
 
 Use Vinfo outside Vim
@@ -58,8 +58,8 @@ Then from your shell you can read a DOC with:
 
 Info Documentation file pages
 -----------------------------
-Vinfo split the Info file in various 'pages' so it's faster to read. You can
-traverse this pages by following the tags or by using on of the page
+Vinfo splits the Info file in various 'pages' so it's faster to render. You
+can traverse this pages by following the tags or by using on of the page
 traversing commands:
 
                                               *:VinfoN* *:VinfoNext*
@@ -74,7 +74,7 @@ traversing commands:
 ==============================================================================
 CLEAN REPOSITORY                                             *vinfo-repository*
 
-When system Info documentation files has been updated Vinfo will still use the
+When system Info documentation files have been updated Vinfo will still use the
 old ones, so you need to clean the current repository in order to update the
 info documentation files that Vinfo uses.
 

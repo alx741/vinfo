@@ -83,7 +83,7 @@ Because of the same reason of `4.1`
 But again: Don't worry, it's just the very first time. Then it will be ok.
 
 
-## 4.3 My Info files has been updated but Vinfo is still using the old ones
+## 4.3 My Info files have been updated but Vinfo is still using the old ones
 
 In Vim execute:
 
