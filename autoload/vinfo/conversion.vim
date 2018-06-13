@@ -14,16 +14,17 @@ function! vinfo#conversion#info2help()
 
     " Add vim modelines for help-file
     " tw=78 ts=8 ft=help norl
-    exe "silent norm! Go" . ' vim:tw=78:ts=8:ft=help:norl:' . "\<Esc>gg"
+    exe "silent norm! Go" . 'vim:tw=78:ts=8:ft=help:norl:' . "\<Esc>gg"
 
-    "" Common ones
-    exe "silent! %s/‘/'/e"
-    exe "silent! %s/’/'/e"
-    exe "silent! %s/“/'/e"
-    exe "silent! %s/”/'/e"
-    exe "silent! %s/•/-/e"
-    "" The rest of them
-    exe 'silent! %s/[^\x00-\x7F]/ /e'
+    "" Remove UNICODE characters
+    " Common ones
+    exe "silent %s/‘/'/eg"
+    exe "silent %s/’/'/eg"
+    exe "silent %s/“/'/eg"
+    exe "silent %s/”/'/eg"
+    exe "silent %s/•/-/eg"
+    " The rest of them
+    exe 'silent! %s/[^\x00-\x7F]/ /eg'
 
     " Convert node subtitles (replace = underlining with -)
     exe "silent " . 'g/\v^$\n.+\n\=+\n^$\n/norm! jjvg_r-\<Esc>'
