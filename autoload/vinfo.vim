@@ -69,7 +69,6 @@ function! vinfo#show(doc, page)
         let page_number = '0' . a:page
     endif
 
-    split
     exe 'edit ' . s:vinfo_repo_path . '/' . a:doc . '/' . a:doc . page_number . '.txt'
     exe 'redraw!'
     exe 'norm gg'
@@ -90,6 +89,7 @@ endfunction
 
 " next_page() {{{1
 function! vinfo#next_page()
+    " echomsg s:vinfo_current_page
     if s:vinfo_current_doc ==? ''
         return 0
     endif
@@ -97,12 +97,13 @@ function! vinfo#next_page()
     " Advance page number
     if s:vinfo_current_page+1 <? s:vinfo_current_doc_pages
         let s:vinfo_current_page+=1
+        " echomsg "here"
+        " echomsg s:vinfo_current_page
     else
-        echo '[Vinfo] No pages left for: ' . s:vinfo_current_doc
+        echo '[Vinfo] No pages left for ' . s:vinfo_current_doc
         return 0
     endif
 
-    quit " Remove previous split
     call vinfo#show(s:vinfo_current_doc, s:vinfo_current_page)
 endfunction
 " }}}1
@@ -119,11 +120,10 @@ function! vinfo#previous_page()
     if s:vinfo_current_page-1 >=? 0
         let s:vinfo_current_page-=1
     else
-        echo '[Vinfo] Currently at the first page of: ' . s:vinfo_current_doc
+        echo '[Vinfo] Currently at the first page of ' . s:vinfo_current_doc
         return 0
     endif
 
-    quit " Remove previous split
     call vinfo#show(s:vinfo_current_doc, s:vinfo_current_page)
 endfunction
 " }}}1
