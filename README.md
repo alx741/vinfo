@@ -8,7 +8,7 @@ way you would normally use [Info](http://www.gnu.org/software/texinfo/manual/inf
 
 ## Why?
 
-The traditional GNU *Info* program has a 'vi mode', but lets face it, it's just
+The traditional GNU *Info* program has a 'vi mode', but let's face it, it's just
 not good enough; it's very limited and ugly.
 
 That is where *Vinfo* comes in, leveraging Vim's help-files format and
@@ -49,7 +49,7 @@ Read [Glibc](http://www.gnu.org/software/libc/) Info documentation
 
 ## 3.2 Use outside Vim
 
-When your are not inside a Vim session but in the shell prompt you can invoke
+When you're not inside a Vim session but in the shell prompt you can invoke
 Vinfo as a command by using the following shell script:
 
         #! /bin/sh
@@ -94,21 +94,3 @@ In Vim execute:
 
 No. It's just for GNU/Linux systems.
 [Info is the GNU documentation system](http://www.gnu.org/software/texinfo/manual/info/info.html)
-
-
-
-# 5. MISC
-
-## 5.1 How it looks
-
-Reading `Glibc` Info documentation
-
-
-With traditional *Info*:
-
-![Info](http://i.imgur.com/tDvvj6r.png)
-
-
-With *Vinfo*:
-
-![Vinfo](http://i.imgur.com/eJCf9K2.png)
