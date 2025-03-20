@@ -23,7 +23,12 @@ navigation (tags jumping).
 
 - Or install it manually by copying the files to the corresponding locations.
 
+## 2.1 Macos
 
+- requires coreutils
+```sh
+brew install coreutils
+```
 
 # 3. Usage
 
@@ -36,14 +41,14 @@ Vinfo can be used right inside a Vim session or from a shell using an alias.
 
 You can use Vinfo inside Vim with:
 
-    :Vinfo doc
+	:Vinfo doc
 
 Where `doc` is the Info documentation to read.
 
 Example:
 Read [Glibc](http://www.gnu.org/software/libc/) Info documentation
 
-    :Vinfo libc
+	:Vinfo libc
 
 
 
@@ -52,17 +57,17 @@ Read [Glibc](http://www.gnu.org/software/libc/) Info documentation
 When you're not inside a Vim session but in the shell prompt you can invoke
 Vinfo as a command by using the following shell script:
 
-        #! /bin/sh
-        vim -c "Vinfo $1" -c 'silent only'
+		#! /bin/sh
+		vim -c "Vinfo $1" -c 'silent only'
 
 Save it in `/usr/bin/` as a file named `vinfo`, give it execution
 permission with:
 
-    $ chmod +x /usr/bin/vinfo
+	$ chmod +x /usr/bin/vinfo
 
 Then from your shell you can read a DOC with:
 
-    $ vinfo doc
+	$ vinfo doc
 
 
 
@@ -87,7 +92,7 @@ But again: Don't worry, it's just the very first time. Then it will be ok.
 
 In Vim execute:
 
-    :VinfoClean
+	:VinfoClean
 
 
 ## 4.4 Does Vinfo works in Mac or Windows?
