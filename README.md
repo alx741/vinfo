@@ -23,13 +23,22 @@ navigation (tags jumping).
 
 - Or install it manually by copying the files to the corresponding locations.
 
-# 3. Configuration
 
-To set a custom location for the doc repo set the `g:vinfo_repo_path` to the custom file location:
+## 2.1 Macos
+
+- requires coreutils
+```sh
+brew install coreutils
+```
+
 
 ```vimscript
 let g:vinfo_repo_path = $XDG_CACHE_HOME/vinfo
 ```
+
+# 3. Configuration
+
+To set a custom location for the doc repo set the `g:vinfo_repo_path` to the custom file location:
 
 
 # 4. Usage
