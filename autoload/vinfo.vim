@@ -5,8 +5,12 @@
 " =============================================================================
 
 
-let s:vinfo_autoload_path = expand('<sfile>:p:h')
-let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_doc_repo', ':p:h')
+if exists("g:vinfo_repo_path")
+    let s:vinfo_repo_path = get(g:, "vinfo_repo_path")
+else
+    let s:vinfo_autoload_path = expand('<sfile>:p:h')
+    let s:vinfo_repo_path = fnamemodify(s:vinfo_autoload_path . '/../plugin/vinfo_doc_repo', ':p:h')
+endif
 let s:vinfo_current_doc = ""
 let s:vinfo_current_page = 0
 let s:vinfo_current_doc_pages = 0

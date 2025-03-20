@@ -30,7 +30,7 @@ function! vinfo#repo#create(path, doc)
     echom '[Vinfo] Creating repo for: ' . a:doc
     let l:doc_path = a:path . '/' . a:doc . '/'
     let l:doc = l:doc_path . a:doc . '.txt'
-    exe 'silent !mkdir ' . l:doc_path
+    exe 'silent !mkdir -p ' . l:doc_path
     exe 'silent !info ' . a:doc . ' >> ' . l:doc
     let splitter = executable('gsplit') ? 'gsplit' : 'split'
     exe 'silent ! ' . splitter . ' -l 5000 -d --additional-suffix .txt ' . l:doc . ' ' . l:doc_path . a:doc

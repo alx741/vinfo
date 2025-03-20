@@ -23,6 +23,7 @@ navigation (tags jumping).
 
 - Or install it manually by copying the files to the corresponding locations.
 
+
 ## 2.1 Macos
 
 - requires coreutils
@@ -30,14 +31,24 @@ navigation (tags jumping).
 brew install coreutils
 ```
 
-# 3. Usage
+
+```vimscript
+let g:vinfo_repo_path = $XDG_CACHE_HOME/vinfo
+```
+
+# 3. Configuration
+
+To set a custom location for the doc repo set the `g:vinfo_repo_path` to the custom file location:
+
+
+# 4. Usage
 
 Vinfo can be used right inside a Vim session or from a shell using an alias.
 
 ** For extra details about how to use Vinfo please use `:h Vinfo` **
 
 
-## 3.1 Use inside Vim
+## 4.1 Use inside Vim
 
 You can use Vinfo inside Vim with:
 
@@ -52,7 +63,7 @@ Read [Glibc](http://www.gnu.org/software/libc/) Info documentation
 
 
 
-## 3.2 Use outside Vim
+## 4.2 Use outside Vim
 
 When you're not inside a Vim session but in the shell prompt you can invoke
 Vinfo as a command by using the following shell script:
@@ -71,9 +82,9 @@ Then from your shell you can read a DOC with:
 
 
 
-# 4. FAQ
+# 5. FAQ
 
-## 4.1 Why the first time I open an Info doc is too slow
+## 5.1 Why the first time I open an Info doc is too slow
 
 The first time Vinfo will create a repo for that Info doc, convert the text
 files to Vim help-file syntax and create the tags.
@@ -81,21 +92,21 @@ files to Vim help-file syntax and create the tags.
 Don't worry, it's just the very first time. Then it will be ok.
 
 
-## 4.2 Why the first time I open an Info doc Vim interface freaks out?
+## 5.2 Why the first time I open an Info doc Vim interface freaks out?
 
 Because of the same reason of `4.1`
 
 But again: Don't worry, it's just the very first time. Then it will be ok.
 
 
-## 4.3 My Info files have been updated but Vinfo is still using the old ones
+## 5.3 My Info files have been updated but Vinfo is still using the old ones
 
 In Vim execute:
 
 	:VinfoClean
 
 
-## 4.4 Does Vinfo works in Mac or Windows?
+## 5.4 Does Vinfo works in Mac or Windows?
 
 No. It's just for GNU/Linux systems.
 [Info is the GNU documentation system](http://www.gnu.org/software/texinfo/manual/info/info.html)
