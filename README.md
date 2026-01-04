@@ -84,17 +84,17 @@ Then from your shell you can read a DOC with:
 
 # 5. FAQ
 
-## 5.1 Why the first time I open an Info doc is too slow
+## 5.1 Why is the first time opening an Info doc so slow?
 
-The first time Vinfo will create a repo for that Info doc, convert the text
-files to Vim help-file syntax and create the tags.
+The first time, Vinfo will create a repo for that Info doc, convert the text
+files to Vim help-file syntax, and create the tags.
 
 Don't worry, it's just the very first time. Then it will be ok.
 
 
-## 5.2 Why the first time I open an Info doc Vim interface freaks out?
+## 5.2 Why upon first opening an Info doc Vim's interface freaks out?
 
-Because of the same reason of `4.1`
+Same reason as `5.1`
 
 But again: Don't worry, it's just the very first time. Then it will be ok.
 
