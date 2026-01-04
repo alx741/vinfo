@@ -20,7 +20,7 @@ CONTENTS                                                       *vinfo-contents*
 INTRO                                                             *vinfo-intro*
 
 Vinfo allows you to read Info documentation files right inside a Vim session
-in a Vim-help fashioned way or from a shell just the way you normally use
+in a Vim-help fashioned way or from a shell the same way you normally use
 GNU Info.
 
 ==============================================================================
@@ -35,12 +35,12 @@ Read the DOC info documentation with:
 
 The first time you read an info doc file, it will take Vinfo a few seconds to
 create a repository and convert the info file to Vim help-text syntax, but
-don't worry, it only occurs the first time
+don't worry: it only occurs the first time
 
 
 Use Vinfo outside Vim
 ---------------------
-When your are not inside a Vim session but in the shell prompt you can invoke
+When you aren't inside a Vim session but in the shell prompt you can invoke
 Vinfo as a command by using the following shell script:
 
   #! /bin/sh
@@ -59,7 +59,7 @@ Then from your shell you can read a DOC with:
 Info Documentation file pages
 -----------------------------
 Vinfo splits the Info file in various 'pages' so it's faster to render. You
-can traverse this pages by following the tags or by using on of the page
+can traverse this pages by following the tags or by using one of the page
 traversing commands:
 
                                               *:VinfoN* *:VinfoNext*
