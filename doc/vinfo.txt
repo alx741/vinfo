@@ -68,7 +68,7 @@ traversing commands:
 
                                               *:VinfoP* *:VinfoPrevious*
   :VinfoP[revious]    Go to the previous Info documentation file page. Will fail
-                      if the last page is currently loaded.
+                      if the first page is currently loaded.
 
 
 ==============================================================================
